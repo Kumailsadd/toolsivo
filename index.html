@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToolPulse - Free Online Text, Developer & SEO Tools</title>
+  <meta name="description" content="ToolPulse is a fast, privacy-friendly hub of free online text tools, formatters, developer utilities and quick calculators. Count words, clean text, format JSON, encode/decode data and more in your browser. No sign up or downloads." />
+  <link rel="canonical" href="https://toolpulse.com/" />
+  <meta property="og:title" content="ToolPulse - Free Online Text, Developer & SEO Tools" />
+  <meta property="og:description" content="ToolPulse offers free online text, formatting and developer tools that run in your browser. Count words, clean text, format JSON, encode/decode data and run quick calculations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toolpulse.com/" />
+  <meta name="robots" content="index,follow" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 55%),
+        radial-gradient(circle at top right, rgba(129, 140, 248, 0.16), transparent 55%),
+        radial-gradient(circle at bottom, rgba(8, 47, 73, 0.4), #020617);
+    }
+    .tool-nav-button {
+      position: relative;
+    }
+    .tool-nav-button.text-sky-300::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: radial-gradient(circle at left, rgba(56, 189, 248, 0.28), transparent 65%);
+      opacity: 0.85;
+      pointer-events: none;
+    }
+    .tool-nav-button.text-sky-300 {
+      color: #e0f2fe;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-900">
+  <!-- Header -->
+  <header class="border-b border-slate-800/60 bg-slate-950/80 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 to-cyan-400 flex items-center justify-center text-white font-bold text-lg shadow-sm">T</div>
+        <div>
+          <span class="block font-semibold tracking-tight text-slate-50 group-hover:text-white">Text Tool Hub</span>
+          <span class="block text-xs text-slate-400">Fast, private, browser-based tools</span>
+        </div>
+      </a>
+      <nav class="hidden sm:flex gap-5 text-sm text-slate-300">
+        <a href="#tools" class="hover:text-sky-300 transition-colors">Tools</a>
+        <a href="#categories" class="hover:text-sky-300 transition-colors">Categories</a>
+        <a href="#about" class="hover:text-sky-300 transition-colors">About</a>
+        <a href="#contact" class="hover:text-sky-300 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="max-w-6xl mx-auto px-4 py-8 space-y-14">
+    <!-- Hero & intro -->
+    <section class="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1.05fr)] gap-8 items-start">
+      <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-sky-900 text-slate-50 border border-slate-800 rounded-2xl shadow-xl p-5 md:p-7 relative overflow-hidden">
+        <div class="pointer-events-none absolute -right-10 -top-10 w-40 h-40 bg-sky-500/20 blur-3xl rounded-full"></div>
+        <div class="relative space-y-4">
+          <h1 class="text-3xl md:text-4xl font-bold tracking-tight leading-tight">Free Online Text, Formatting &amp; Developer Tools</h1>
+          <p class="text-slate-200/90 mb-1 text-sm md:text-base max-w-xl">
+            Use fast, privacy-friendly tools for writing, coding and everyday calculations. Everything runs in your browser:
+            we don&apos;t store your text, code or numbers on any server.
+          </p>
+          <ul class="text-slate-300 text-sm space-y-1 mb-3 list-disc list-inside">
+            <li>Word, character and line counters, text cleaners and case converters.</li>
+            <li>JSON formatter, Base64 &amp; URL encoders/decoders, slug &amp; lorem ipsum generators.</li>
+            <li>Quick percentage, tip, discount and age calculators for everyday use.</li>
+          </ul>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#tools" class="inline-flex items-center px-4 py-2 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 text-sm font-semibold shadow-md shadow-sky-500/30 transition-colors">Start using tools</a>
+            <span class="text-xs text-slate-400">50+ tools planned • 100% free • No sign up</span>
+          </div>
+          <!-- Ad slot: top banner -->
+          <div class="mt-5 border border-dashed border-sky-500/30 rounded-xl bg-slate-900/70 flex items-center justify-center h-16 text-[11px] text-slate-500">
+            Ad slot: top banner (paste Adsterra/Monetag or AdSense code here later)
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured tools preview -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-xl p-4 space-y-4 text-slate-50">
+        <h2 class="font-semibold text-sm">Quick access to popular tools</h2>
+        <p class="text-xs text-slate-400">Jump straight into some of the most-used tools. All of them work instantly in your browser.</p>
+        <div class="grid sm:grid-cols-2 gap-3 text-sm">
+          <a href="#tool-word-counter" data-jump-tool="word-counter" class="group border border-slate-800 rounded-xl p-3 bg-slate-900/60 hover:border-sky-400 hover:bg-slate-900/90 transition flex flex-col gap-1">
+            <span class="font-semibold text-sm">Word Counter</span>
+            <span class="text-xs text-slate-300">Count words, characters, sentences and paragraphs.</span>
+            <span class="mt-1 text-[11px] text-sky-300 font-medium group-hover:underline">Open tool</span>
+          </a>
+          <a href="#tool-case-converter" data-jump-tool="case-converter" class="group border border-slate-800 rounded-xl p-3 bg-slate-900/60 hover:border-sky-400 hover:bg-slate-900/90 transition flex flex-col gap-1">
+            <span class="font-semibold text-sm">Text Case Converter</span>
+            <span class="text-xs text-slate-300">Change text to upper, lower, title or sentence case.</span>
+            <span class="mt-1 text-[11px] text-sky-300 font-medium group-hover:underline">Open tool</span>
+          </a>
+          <a href="#tool-percentage-calculator" data-jump-tool="percentage-calculator" class="group border border-slate-800 rounded-xl p-3 bg-slate-900/60 hover:border-sky-400 hover:bg-slate-900/90 transition flex flex-col gap-1">
+            <span class="font-semibold text-sm">Percentage Calculator</span>
+            <span class="text-xs text-slate-300">Quickly work out discounts, increases and simple percentages.</span>
+            <span class="mt-1 text-[11px] text-sky-300 font-medium group-hover:underline">Open tool</span>
+          </a>
+          <a href="#tool-json-formatter" data-jump-tool="json-formatter" class="group border border-slate-800 rounded-xl p-3 bg-slate-900/60 hover:border-sky-400 hover:bg-slate-900/90 transition flex flex-col gap-1">
+            <span class="font-semibold text-sm">JSON Formatter</span>
+            <span class="text-xs text-slate-300">Pretty-print and validate JSON safely in your browser.</span>
+            <span class="mt-1 text-[11px] text-sky-300 font-medium group-hover:underline">Open tool</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories overview -->
+    <section id="categories" class="space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight text-slate-50">Tool categories</h2>
+          <p class="text-sm text-slate-400">Browse tools by category. Each tool runs entirely in your browser for maximum privacy.</p>
+        </div>
+        <span class="text-xs text-slate-500">Text tools • Developer tools • SEO helpers • Calculators • Generators</span>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">Text &amp; Writing Tools</h3>
+          <p class="text-slate-300 text-sm">Word, character and line counters, reading time and basic text statistics for writers and students.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>Word Counter</li>
+            <li>Character &amp; Line Counters</li>
+            <li>Reading Time &amp; Text Stats</li>
+          </ul>
+        </article>
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">Case &amp; Formatting Tools</h3>
+          <p class="text-slate-300 text-sm">Change case, remove line breaks, clean extra spaces and sort or clean lists in seconds.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>Text Case Converter</li>
+            <li>Remove Line Breaks</li>
+            <li>Duplicate Line Remover &amp; Text Sorter</li>
+          </ul>
+        </article>
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">Developer &amp; Encoding Tools</h3>
+          <p class="text-slate-300 text-sm">JSON formatter, Base64, URL &amp; HTML entity encoders/decoders and more for everyday development work.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>JSON Formatter</li>
+            <li>Base64 &amp; URL Tools</li>
+            <li>HTML Entity Converter</li>
+          </ul>
+        </article>
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">SEO &amp; Content Helpers</h3>
+          <p class="text-slate-300 text-sm">SEO title and meta description length checkers, slug generators and keyword helpers.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>SEO Title Checker</li>
+            <li>Meta Description Checker</li>
+            <li>Keyword Density Checker</li>
+          </ul>
+        </article>
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">Quick Calculators</h3>
+          <p class="text-slate-300 text-sm">Percentage, discount, tip, age and date calculators to quickly answer everyday questions.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>Percentage &amp; Discount Calculators</li>
+            <li>Tip &amp; Age Calculators</li>
+            <li>Date Difference Calculator</li>
+          </ul>
+        </article>
+        <article class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-col gap-2">
+          <h3 class="font-semibold text-slate-50">Generators &amp; Random Tools</h3>
+          <p class="text-slate-300 text-sm">Lorem ipsum, slugs, random numbers and password generators for quick tasks.</p>
+          <ul class="text-xs text-slate-400 list-disc list-inside space-y-1 mt-1">
+            <li>Lorem Ipsum Generator</li>
+            <li>Slug Generator</li>
+            <li>Random Number &amp; Password Generators</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tools workspace -->
+    <section id="tools" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight text-slate-50">Try the tools directly</h2>
+          <p class="text-sm text-slate-400">Below are core tools already working. You can add many more later by following the same pattern.</p>
+        </div>
+        <span class="text-xs text-slate-500">No sign up • Runs in your browser • Text not stored</span>
+      </div>
+
+      <div class="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)] gap-4 items-start">
+        <!-- Tool navigation -->
+        <aside class="bg-slate-900/70 border border-slate-800 rounded-xl shadow-lg p-3 space-y-3 text-sm">
+          <h3 class="font-semibold text-slate-50 mb-1">Tools in this demo</h3>
+          <p class="text-xs text-slate-400 mb-1">Click a tool to open it. All tools are fully usable in your browser.</p>
+          <div class="flex flex-col divide-y divide-slate-800/80 max-h-[520px] overflow-auto pr-1">
+            <button type="button" data-tool-button="word-counter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Word Counter</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="character-counter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Character Counter</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="line-counter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Line Counter</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="case-converter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Text Case Converter</span>
+              <span class="text-[11px] text-slate-500">Formatting</span>
+            </button>
+            <button type="button" data-tool-button="remove-line-breaks" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Remove Line Breaks</span>
+              <span class="text-[11px] text-slate-500">Formatting</span>
+            </button>
+            <button type="button" data-tool-button="duplicate-line-remover" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Duplicate Line Remover</span>
+              <span class="text-[11px] text-slate-500">Formatting</span>
+            </button>
+            <button type="button" data-tool-button="text-sorter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Text Sorter</span>
+              <span class="text-[11px] text-slate-500">Formatting</span>
+            </button>
+            <button type="button" data-tool-button="percentage-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Percentage Calculator</span>
+              <span class="text-[11px] text-slate-500">Calculator</span>
+            </button>
+            <button type="button" data-tool-button="discount-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Discount Calculator</span>
+              <span class="text-[11px] text-slate-500">Calculator</span>
+            </button>
+            <button type="button" data-tool-button="tip-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Tip Calculator</span>
+              <span class="text-[11px] text-slate-500">Calculator</span>
+            </button>
+            <button type="button" data-tool-button="age-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Age Calculator</span>
+              <span class="text-[11px] text-slate-500">Calculator</span>
+            </button>
+            <button type="button" data-tool-button="date-difference-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Date Difference Calculator</span>
+              <span class="text-[11px] text-slate-500">Calculator</span>
+            </button>
+            <button type="button" data-tool-button="json-formatter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>JSON Formatter</span>
+              <span class="text-[11px] text-slate-500">Developer</span>
+            </button>
+            <button type="button" data-tool-button="base64" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Base64 Encoder / Decoder</span>
+              <span class="text-[11px] text-slate-500">Developer</span>
+            </button>
+            <button type="button" data-tool-button="url-encoder-decoder" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>URL Encoder / Decoder</span>
+              <span class="text-[11px] text-slate-500">Developer</span>
+            </button>
+            <button type="button" data-tool-button="html-entities" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>HTML Entity Encoder / Decoder</span>
+              <span class="text-[11px] text-slate-500">Developer</span>
+            </button>
+            <button type="button" data-tool-button="seo-title-checker" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>SEO Title Checker</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="meta-description-checker" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Meta Description Checker</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="keyword-density-checker" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Keyword Density Checker</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="lorem-ipsum-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Lorem Ipsum Generator</span>
+              <span class="text-[11px] text-slate-500">Content</span>
+            </button>
+            <button type="button" data-tool-button="slug-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Slug Generator</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="random-number-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Random Number Generator</span>
+              <span class="text-[11px] text-slate-500">Random</span>
+            </button>
+            <button type="button" data-tool-button="password-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Password Generator</span>
+              <span class="text-[11px] text-slate-500">Security</span>
+            </button>
+            <button type="button" data-tool-button="reading-time-calculator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Reading Time Calculator</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="readability-checker" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Readability Checker</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="word-frequency-counter" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Word Frequency Counter</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="text-diff-checker" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Text Difference Checker</span>
+              <span class="text-[11px] text-slate-500">Text</span>
+            </button>
+            <button type="button" data-tool-button="email-extractor" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Email Extractor</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="url-extractor" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>URL Extractor</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="robots-txt-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>robots.txt Generator</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="sitemap-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Sitemap.xml Generator</span>
+              <span class="text-[11px] text-slate-500">SEO</span>
+            </button>
+            <button type="button" data-tool-button="random-word-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Random Word Generator</span>
+              <span class="text-[11px] text-slate-500">Random</span>
+            </button>
+            <button type="button" data-tool-button="username-generator" class="tool-nav-button flex items-center justify-between gap-2 py-2 text-left text-sm text-slate-200">
+              <span>Username Generator</span>
+              <span class="text-[11px] text-slate-500">Content</span>
+            </button>
+          </div>
+
+          <!-- Ad slot: sidebar -->
+          <div class="mt-4 border border-dashed border-slate-700 rounded-xl bg-slate-900/70 flex items-center justify-center h-32 text-[11px] text-slate-500">
+            Ad slot: sidebar / vertical (desktop only recommended)
+          </div>
+        </aside>
+
+        <!-- Tool panels -->
+        <div class="space-y-6">
+          <!-- Tool: Word Counter -->
+          <article id="tool-word-counter" data-tool-panel="word-counter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Word Counter</h3>
+                <p class="text-xs text-slate-400">Count words, characters, sentences and paragraphs instantly as you type.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="wordCounterInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="wordCounterInput" class="w-full min-h-[180px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste or type your text here..."></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-clear-target="wordCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear text</button>
+                  <button type="button" data-copy-target="wordCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy text</button>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Counts</h4>
+                <dl class="grid grid-cols-2 gap-2 text-sm">
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Words</dt>
+                    <dd id="wordCounterWords" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Characters</dt>
+                    <dd id="wordCounterChars" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Characters (no spaces)</dt>
+                    <dd id="wordCounterCharsNoSpaces" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Sentences</dt>
+                    <dd id="wordCounterSentences" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Paragraphs</dt>
+                    <dd id="wordCounterParagraphs" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Estimated reading time</dt>
+                    <dd id="wordCounterReadingTime" class="text-sm font-medium text-slate-50">0 min</dd>
+                  </div>
+                </dl>
+                <p class="text-[11px] text-slate-500">Reading time is estimated at ~200 words per minute. This is only a rough guide.</p>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this word counter</h4>
+              <p>This free online word counter shows you word, character, sentence and paragraph counts in real time. It&apos;s useful for essays, blog posts, assignments and social media captions where you need to stay within a limit.</p>
+              <p>All counting happens in your browser. Your text is not uploaded or stored on any server, which makes this tool suitable for sensitive drafts and client work.</p>
+              <h5 class="font-semibold text-slate-100 text-sm mt-2">FAQ</h5>
+              <ul class="list-disc list-inside space-y-1">
+                <li><span class="font-medium">Do spaces count as characters?</span> Yes, the main character count includes spaces. The &quot;characters (no spaces)&quot; value ignores spaces.</li>
+                <li><span class="font-medium">Is there any limit?</span> The tool is designed for typical documents. Extremely large texts may perform more slowly on older devices.</li>
+                <li><span class="font-medium">Is my text saved?</span> No. Everything runs locally in your browser tab.</li>
+              </ul>
+            </section>
+          </article>
+
+          <!-- Tool: Character Counter -->
+          <article id="tool-character-counter" data-tool-panel="character-counter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Character Counter</h3>
+                <p class="text-xs text-slate-400">Count characters with and without spaces, plus words and lines.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="charCounterInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="charCounterInput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste or type your text here..."></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-clear-target="charCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear text</button>
+                  <button type="button" data-copy-target="charCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy text</button>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Counts</h4>
+                <dl class="grid grid-cols-2 gap-2 text-sm">
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Characters</dt>
+                    <dd id="charCounterChars" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Characters (no spaces)</dt>
+                    <dd id="charCounterCharsNoSpaces" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Words</dt>
+                    <dd id="charCounterWords" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Lines</dt>
+                    <dd id="charCounterLines" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                </dl>
+                <p class="text-[11px] text-slate-500">Use this when you need to stay within strict character limits for titles, descriptions or social posts.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Line Counter -->
+          <article id="tool-line-counter" data-tool-panel="line-counter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Line Counter</h3>
+                <p class="text-xs text-slate-400">Count the number of lines, words and characters in any block of text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="lineCounterInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="lineCounterInput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste code, lists or any multi-line text here..."></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-clear-target="lineCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear text</button>
+                  <button type="button" data-copy-target="lineCounterInput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy text</button>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Counts</h4>
+                <dl class="grid grid-cols-2 gap-2 text-sm">
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Lines</dt>
+                    <dd id="lineCounterLines" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Words</dt>
+                    <dd id="lineCounterWords" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                  <div class="border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60">
+                    <dt class="text-[11px] text-slate-400">Characters</dt>
+                    <dd id="lineCounterChars" class="text-lg font-semibold text-slate-50">0</dd>
+                  </div>
+                </dl>
+                <p class="text-[11px] text-slate-500">Useful for checking line counts in code snippets, logs and lists.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Text Case Converter -->
+          <article id="tool-case-converter" data-tool-panel="case-converter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Text Case Converter</h3>
+                <p class="text-xs text-slate-400">Convert text between uppercase, lowercase, title case and sentence case.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-[11px] font-medium border border-emerald-500/40">Formatting</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="caseInput" class="block text-xs font-medium text-slate-200">Original text</label>
+                <textarea id="caseInput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste your text here..."></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" data-case-action="upper" class="case-action inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-50 text-slate-900 text-xs font-semibold hover:bg-slate-200">UPPERCASE</button>
+                  <button type="button" data-case-action="lower" class="case-action inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">lowercase</button>
+                  <button type="button" data-case-action="title" class="case-action inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Title Case</button>
+                  <button type="button" data-case-action="sentence" class="case-action inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Sentence case</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="caseOutput" class="block text-xs font-medium text-slate-200">Converted text</label>
+                <textarea id="caseOutput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your converted text will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="caseOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy converted text</button>
+                  <button type="button" data-clear-target="caseInput,caseOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear both</button>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this case converter</h4>
+              <p>Quickly convert text between different capitalization styles. This is useful for headlines, titles, social media posts and fixing accidental caps lock mistakes.</p>
+              <p>All conversions happen instantly in your browser and work even when you are offline after the page is loaded.</p>
+              <h5 class="font-semibold text-slate-100 text-sm mt-2">FAQ</h5>
+              <ul class="list-disc list-inside space-y-1">
+                <li><span class="font-medium">What is title case?</span> Title case capitalizes the first letter of most words, excluding some short words depending on style.</li>
+                <li><span class="font-medium">What is sentence case?</span> Sentence case capitalizes only the first letter of the first word and proper nouns.</li>
+                <li><span class="font-medium">Will this change my punctuation?</span> No, it only changes letter casing.</li>
+              </ul>
+            </section>
+          </article>
+
+          <!-- Tool: Remove Line Breaks -->
+          <article id="tool-remove-line-breaks" data-tool-panel="remove-line-breaks" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Remove Line Breaks</h3>
+                <p class="text-xs text-slate-400">Clean up text by removing unwanted line breaks and newlines.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-[11px] font-medium border border-emerald-500/40">Formatting</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="removeLbInput" class="block text-xs font-medium text-slate-200">Original text</label>
+                <textarea id="removeLbInput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste text with unwanted line breaks here..."></textarea>
+                <div class="flex flex-wrap gap-3 mt-2 text-xs text-slate-300">
+                  <label class="inline-flex items-center gap-1">
+                    <input type="radio" name="removeLbMode" value="all" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Remove all line breaks</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="radio" name="removeLbMode" value="keepParagraphs" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                    <span>Keep paragraphs (merge single line breaks)</span>
+                  </label>
+                </div>
+                <button type="button" id="removeLbRun" class="mt-2 inline-flex items-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Clean text</button>
+              </div>
+              <div class="space-y-2">
+                <label for="removeLbOutput" class="block text-xs font-medium text-slate-200">Cleaned text</label>
+                <textarea id="removeLbOutput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your cleaned text will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="removeLbOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy cleaned text</button>
+                  <button type="button" data-clear-target="removeLbInput,removeLbOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear both</button>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this line break remover</h4>
+              <p>Text copied from PDFs, emails or older websites often contains line breaks in odd places. This tool removes unwanted line breaks so you can reuse the text in documents, blog posts or messages.</p>
+              <p>You can remove all line breaks, or keep double line breaks as paragraph separators while merging single line breaks into spaces.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Duplicate Line Remover -->
+          <article id="tool-duplicate-line-remover" data-tool-panel="duplicate-line-remover" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Duplicate Line Remover</h3>
+                <p class="text-xs text-slate-400">Remove duplicate lines from lists, logs and other text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-[11px] font-medium border border-emerald-500/40">Formatting</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="dupLinesInput" class="block text-xs font-medium text-slate-200">Original lines</label>
+                <textarea id="dupLinesInput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste one item per line..."></textarea>
+                <div class="flex flex-wrap gap-3 mt-2 text-xs text-slate-300">
+                  <label class="inline-flex items-center gap-1">
+                    <input type="checkbox" id="dupLinesCase" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                    <span>Case-sensitive</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="checkbox" id="dupLinesRemoveBlank" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Remove blank lines</span>
+                  </label>
+                </div>
+                <button type="button" id="dupLinesRun" class="mt-2 inline-flex items-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Remove duplicates</button>
+              </div>
+              <div class="space-y-2">
+                <label for="dupLinesOutput" class="block text-xs font-medium text-slate-200">Cleaned lines</label>
+                <textarea id="dupLinesOutput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your cleaned list will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="dupLinesOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy cleaned list</button>
+                  <button type="button" data-clear-target="dupLinesInput,dupLinesOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear both</button>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this duplicate line remover</h4>
+              <p>This tool is ideal for cleaning lists of tags, keywords, email addresses or other data where duplicates can cause confusion or errors. It keeps the first occurrence of each unique line and removes the rest.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Text Sorter -->
+          <article id="tool-text-sorter" data-tool-panel="text-sorter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Text Sorter</h3>
+                <p class="text-xs text-slate-400">Sort lines of text alphabetically (A–Z or Z–A) in your browser.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-[11px] font-medium border border-emerald-500/40">Formatting</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="textSortInput" class="block text-xs font-medium text-slate-200">Original lines</label>
+                <textarea id="textSortInput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste one item per line..."></textarea>
+                <div class="flex flex-wrap gap-3 mt-2 text-xs text-slate-300">
+                  <label class="inline-flex items-center gap-1">
+                    <span>Order:</span>
+                    <select id="textSortOrder" class="bg-slate-950 border border-slate-700 rounded-full px-2 py-1 text-[11px] text-slate-200 focus:outline-none focus:ring-1 focus:ring-sky-500">
+                      <option value="asc">A → Z (ascending)</option>
+                      <option value="desc">Z → A (descending)</option>
+                    </select>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="checkbox" id="textSortRemoveBlank" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Remove blank lines</span>
+                  </label>
+                </div>
+                <button type="button" id="textSortRun" class="mt-2 inline-flex items-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Sort lines</button>
+              </div>
+              <div class="space-y-2">
+                <label for="textSortOutput" class="block text-xs font-medium text-slate-200">Sorted lines</label>
+                <textarea id="textSortOutput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your sorted list will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="textSortOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy sorted list</button>
+                  <button type="button" data-clear-target="textSortInput,textSortOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear both</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Percentage Calculator -->
+          <article id="tool-percentage-calculator" data-tool-panel="percentage-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Percentage Calculator</h3>
+                <p class="text-xs text-slate-400">Work out percentage values, percentage increase/decrease and discounts.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-amber-500/10 text-amber-300 text-[11px] font-medium border border-amber-500/40">Calculator</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex flex-wrap gap-3 text-xs text-slate-300">
+                <label class="inline-flex items-center gap-1">
+                  <input type="radio" name="pctMode" value="of" class="pct-mode h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                  <span>What is <strong>X%</strong> of <strong>Y</strong>?</span>
+                </label>
+                <label class="inline-flex items-center gap-1">
+                  <input type="radio" name="pctMode" value="change" class="pct-mode h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                  <span>What is the % change from <strong>X</strong> to <strong>Y</strong>?</span>
+                </label>
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-3 items-end">
+                <div>
+                  <label for="pctX" class="block text-xs font-medium text-slate-200">X</label>
+                  <input id="pctX" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 20" />
+                </div>
+                <div>
+                  <label for="pctY" class="block text-xs font-medium text-slate-200">Y</label>
+                  <input id="pctY" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 80" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="pctCalculate" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="pctClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+
+              <div id="pctResultWrapper" class="hidden mt-2">
+                <h4 class="text-xs font-semibold tracking-wide text-slate-400 uppercase mb-1">Result</h4>
+                <p id="pctResult" class="text-sm font-medium text-slate-50 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2"></p>
+              </div>
+              <p id="pctError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this percentage calculator</h4>
+              <p>Use this tool to quickly work out percentages for discounts, simple price changes or quick maths questions. It supports &quot;X% of Y&quot; and percentage change between two values.</p>
+              <p>This calculator is for everyday use only and doesn&apos;t replace professional financial advice.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Discount Calculator -->
+          <article id="tool-discount-calculator" data-tool-panel="discount-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Discount Calculator</h3>
+                <p class="text-xs text-slate-400">See the final price and savings after applying a discount.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-amber-500/10 text-amber-300 text-[11px] font-medium border border-amber-500/40">Calculator</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-3 gap-3 items-end">
+                <div>
+                  <label for="discOriginal" class="block text-xs font-medium text-slate-200">Original price</label>
+                  <input id="discOriginal" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 100" />
+                </div>
+                <div>
+                  <label for="discPercent" class="block text-xs font-medium text-slate-200">Discount (%)</label>
+                  <input id="discPercent" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 20" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="discRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="discClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="discResult" class="text-sm text-slate-50 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="discError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this discount calculator</h4>
+              <p>This calculator quickly shows you your savings and final price after a percentage discount. It&apos;s useful for sales, promotions and basic budgeting.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Tip Calculator -->
+          <article id="tool-tip-calculator" data-tool-panel="tip-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Tip Calculator</h3>
+                <p class="text-xs text-slate-400">Calculate tip amount and total bill, optionally split between people.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-amber-500/10 text-amber-300 text-[11px] font-medium border border-amber-500/40">Calculator</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-4 gap-3 items-end">
+                <div>
+                  <label for="tipBill" class="block text-xs font-medium text-slate-200">Bill amount</label>
+                  <input id="tipBill" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 45.50" />
+                </div>
+                <div>
+                  <label for="tipPercent" class="block text-xs font-medium text-slate-200">Tip (%)</label>
+                  <input id="tipPercent" type="number" step="any" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 15" />
+                </div>
+                <div>
+                  <label for="tipPeople" class="block text-xs font-medium text-slate-200">People (optional)</label>
+                  <input id="tipPeople" type="number" step="1" min="1" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 2" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="tipRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="tipClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="tipResult" class="text-sm text-slate-50 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="tipError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: Age Calculator -->
+          <article id="tool-age-calculator" data-tool-panel="age-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Age Calculator</h3>
+                <p class="text-xs text-slate-400">Calculate age in years, months and days from a date of birth.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-amber-500/10 text-amber-300 text-[11px] font-medium border border-amber-500/40">Calculator</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-3 gap-3 items-end">
+                <div>
+                  <label for="ageDob" class="block text-xs font-medium text-slate-200">Date of birth</label>
+                  <input id="ageDob" type="date" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div>
+                  <label for="ageAsOf" class="block text-xs font-medium text-slate-200">As of date</label>
+                  <input id="ageAsOf" type="date" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="ageRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="ageClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="ageResult" class="text-sm text-slate-50 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="ageError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this age calculator</h4>
+              <p>This age calculator shows the difference between two dates in years, months and days. It&apos;s useful for quick checks, forms and everyday use.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Date Difference Calculator -->
+          <article id="tool-date-difference-calculator" data-tool-panel="date-difference-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Date Difference Calculator</h3>
+                <p class="text-xs text-slate-400">Find the number of days, years, months and days between two dates.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-amber-500/10 text-amber-300 text-[11px] font-medium border border-amber-500/40">Calculator</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-3 gap-3 items-end">
+                <div>
+                  <label for="dateDiffStart" class="block text-xs font-medium text-slate-200">Start date</label>
+                  <input id="dateDiffStart" type="date" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div>
+                  <label for="dateDiffEnd" class="block text-xs font-medium text-slate-200">End date</label>
+                  <input id="dateDiffEnd" type="date" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="dateDiffRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="dateDiffClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="dateDiffResult" class="text-sm text-slate-50 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="dateDiffError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: JSON Formatter -->
+          <article id="tool-json-formatter" data-tool-panel="json-formatter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">JSON Formatter &amp; Validator</h3>
+                <p class="text-xs text-slate-400">Pretty-print and validate JSON safely in your browser. Ideal for developers.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-violet-500/10 text-violet-300 text-[11px] font-medium border border-violet-500/40">Developer</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="jsonInput" class="block text-xs font-medium text-slate-200">JSON input</label>
+                <textarea id="jsonInput" class="w-full min-h-[200px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder='Paste your JSON here, e.g. {"hello": "world"}'></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" id="jsonFormat" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-50 text-slate-900 text-xs font-semibold hover:bg-slate-200">Format &amp; validate</button>
+                  <button type="button" id="jsonMinify" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Minify</button>
+                  <button type="button" data-clear-target="jsonInput,jsonOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="jsonOutput" class="block text-xs font-medium text-slate-200">Formatted JSON</label>
+                <textarea id="jsonOutput" class="w-full min-h-[200px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your formatted JSON will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="jsonOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy formatted JSON</button>
+                  <span id="jsonStatus" class="text-[11px]"></span>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this JSON formatter</h4>
+              <p>This JSON formatter parses your JSON input in the browser and reprints it with consistent indentation. If your JSON is invalid, you&apos;ll see an error message instead of formatted output.</p>
+              <p>The tool never sends your data to a server. It&apos;s suitable for formatting API responses, configuration snippets and other development data.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Base64 Encoder / Decoder -->
+          <article id="tool-base64" data-tool-panel="base64" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Base64 Encoder / Decoder</h3>
+                <p class="text-xs text-slate-400">Convert text to Base64 and decode Base64 back to text, fully in your browser.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-[11px] font-medium border border-indigo-500/40">Developer</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="b64Input" class="block text-xs font-medium text-slate-200">Input</label>
+                <textarea id="b64Input" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Enter plain text or Base64 here..."></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" id="b64Encode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-50 text-slate-900 text-xs font-semibold hover:bg-slate-200">Encode to Base64</button>
+                  <button type="button" id="b64Decode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Decode from Base64</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="b64Output" class="block text-xs font-medium text-slate-200">Output</label>
+                <textarea id="b64Output" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Result will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="b64Output" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy result</button>
+                  <span id="b64Status" class="text-[11px]"></span>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this Base64 tool</h4>
+              <p>Base64 is a way of representing binary data using text characters. Developers often use it in data URLs, simple encoding or when moving data between systems that expect text.</p>
+              <p>This tool uses built-in browser functions to encode and decode Base64 locally. It&apos;s suitable for most everyday use cases, but not for strong encryption or security-critical workflows.</p>
+            </section>
+          </article>
+
+          <!-- Tool: URL Encoder / Decoder -->
+          <article id="tool-url-encoder-decoder" data-tool-panel="url-encoder-decoder" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">URL Encoder / Decoder</h3>
+                <p class="text-xs text-slate-400">Encode and decode URLs and query strings safely in your browser.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-[11px] font-medium border border-indigo-500/40">Developer</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="urlInput" class="block text-xs font-medium text-slate-200">Input</label>
+                <textarea id="urlInput" class="w-full min-h-[120px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste a URL or text to encode/decode..."></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" id="urlEncode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-50 text-slate-900 text-xs font-semibold hover:bg-slate-200">Encode URL</button>
+                  <button type="button" id="urlDecode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Decode URL</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="urlOutput" class="block text-xs font-medium text-slate-200">Output</label>
+                <textarea id="urlOutput" class="w-full min-h-[120px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Result will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="urlOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy result</button>
+                  <span id="urlStatus" class="text-[11px]"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: HTML Entity Encoder / Decoder -->
+          <article id="tool-html-entities" data-tool-panel="html-entities" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">HTML Entity Encoder / Decoder</h3>
+                <p class="text-xs text-slate-400">Convert text to HTML entities and decode them back to plain text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-[11px] font-medium border border-indigo-500/40">Developer</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start">
+              <div class="space-y-2">
+                <label for="htmlEntInput" class="block text-xs font-medium text-slate-200">Input</label>
+                <textarea id="htmlEntInput" class="w-full min-h-[120px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Enter plain text or HTML entities here..."></textarea>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" id="htmlEntEncode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-50 text-slate-900 text-xs font-semibold hover:bg-slate-200">Encode to entities</button>
+                  <button type="button" id="htmlEntDecode" class="inline-flex items-center px-2.5 py-1.5 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800">Decode entities</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="htmlEntOutput" class="block text-xs font-medium text-slate-200">Output</label>
+                <textarea id="htmlEntOutput" class="w-full min-h-[120px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Result will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="htmlEntOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy result</button>
+                  <span id="htmlEntStatus" class="text-[11px]"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: SEO Title Checker -->
+          <article id="tool-seo-title-checker" data-tool-panel="seo-title-checker" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">SEO Title Length Checker</h3>
+                <p class="text-xs text-slate-400">Check your page title length and get simple guidance for SEO.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="seoTitleInput" class="block text-xs font-medium text-slate-200">Page title</label>
+                <textarea id="seoTitleInput" class="w-full min-h-[80px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste or type your SEO title here..."></textarea>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <p class="text-xs text-slate-300">Characters: <span id="seoTitleCount" class="font-semibold text-sky-300">0</span></p>
+                <p id="seoTitleAdvice" class="text-xs text-slate-400"></p>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this SEO title checker</h4>
+              <p>This tool helps you keep your titles within a sensible character range. While search engines use pixel width rather than characters, a character counter is still a helpful guideline.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Meta Description Checker -->
+          <article id="tool-meta-description-checker" data-tool-panel="meta-description-checker" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Meta Description Length Checker</h3>
+                <p class="text-xs text-slate-400">Check and optimize your meta description length.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="metaDescInput" class="block text-xs font-medium text-slate-200">Meta description</label>
+                <textarea id="metaDescInput" class="w-full min-h-[100px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste or type your meta description here..."></textarea>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <p class="text-xs text-slate-300">Characters: <span id="metaDescCount" class="font-semibold text-sky-300">0</span></p>
+                <p id="metaDescAdvice" class="text-xs text-slate-400"></p>
+              </div>
+            </div>
+
+            <section class="pt-2 border-t border-slate-800 space-y-2 text-xs text-slate-300">
+              <h4 class="font-semibold text-slate-100 text-sm">About this meta description checker</h4>
+              <p>Meta descriptions give searchers a quick summary of your page. This tool helps you write descriptions that are long enough to be useful, but not so long that they are often cut off.</p>
+            </section>
+          </article>
+
+          <!-- Tool: Keyword Density Checker -->
+          <article id="tool-keyword-density-checker" data-tool-panel="keyword-density-checker" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Keyword Density Checker</h3>
+                <p class="text-xs text-slate-400">See how often a word or phrase appears in your text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="kwTextInput" class="block text-xs font-medium text-slate-200">Content text</label>
+                <textarea id="kwTextInput" class="w-full min-h-[140px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste your content here..."></textarea>
+              </div>
+              <div class="grid md:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)] gap-3 items-end">
+                <div>
+                  <label for="kwPhraseInput" class="block text-xs font-medium text-slate-200">Keyword or phrase</label>
+                  <input id="kwPhraseInput" type="text" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. online word counter" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="kwDensityRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Check density</button>
+                  <button type="button" id="kwDensityClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="kwDensityResult" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="kwDensityError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: Lorem Ipsum Generator -->
+          <article id="tool-lorem-ipsum-generator" data-tool-panel="lorem-ipsum-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Lorem Ipsum Generator</h3>
+                <p class="text-xs text-slate-400">Generate placeholder lorem ipsum paragraphs for designs and drafts.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-[11px] font-medium border border-indigo-500/40">Content</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex flex-wrap items-end gap-3">
+                <div>
+                  <label for="loremParagraphs" class="block text-xs font-medium text-slate-200">Number of paragraphs</label>
+                  <input id="loremParagraphs" type="number" min="1" max="10" value="3" class="w-28 text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <button type="button" id="loremGenerate" class="inline-flex items-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Generate</button>
+              </div>
+              <div class="space-y-2">
+                <label for="loremOutput" class="block text-xs font-medium text-slate-200">Lorem ipsum text</label>
+                <textarea id="loremOutput" class="w-full min-h-[180px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Generated lorem ipsum text will appear here..." readonly></textarea>
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" data-copy-target="loremOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy text</button>
+                  <button type="button" data-clear-target="loremOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Slug Generator -->
+          <article id="tool-slug-generator" data-tool-panel="slug-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Slug Generator</h3>
+                <p class="text-xs text-slate-400">Turn titles into clean, SEO-friendly URL slugs.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="slugInput" class="block text-xs font-medium text-slate-200">Title or phrase</label>
+                <textarea id="slugInput" class="w-full min-h-[80px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste your title or phrase here..."></textarea>
+              </div>
+              <div class="space-y-2">
+                <label for="slugOutput" class="block text-xs font-medium text-slate-200">Generated slug</label>
+                <input id="slugOutput" type="text" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="your-generated-slug-will-appear-here" readonly />
+                <div class="flex flex-wrap items-center justify-between gap-2 mt-1">
+                  <button type="button" id="slugGenerate" class="inline-flex items-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Generate slug</button>
+                  <button type="button" data-copy-target="slugOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy slug</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Random Number Generator -->
+          <article id="tool-random-number-generator" data-tool-panel="random-number-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Random Number Generator</h3>
+                <p class="text-xs text-slate-400">Generate random integers between a minimum and maximum value.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Random</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-4 gap-3 items-end">
+                <div>
+                  <label for="rngMin" class="block text-xs font-medium text-slate-200">Minimum</label>
+                  <input id="rngMin" type="number" step="1" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 1" />
+                </div>
+                <div>
+                  <label for="rngMax" class="block text-xs font-medium text-slate-200">Maximum</label>
+                  <input id="rngMax" type="number" step="1" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. 100" />
+                </div>
+                <div>
+                  <label for="rngCount" class="block text-xs font-medium text-slate-200">How many numbers?</label>
+                  <input id="rngCount" type="number" step="1" min="1" value="1" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="inline-flex items-center gap-1 mt-4 md:mt-0">
+                    <input type="checkbox" id="rngAllowRepeats" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span class="text-xs text-slate-300">Allow repeats</span>
+                  </label>
+                  <div class="flex gap-2 mt-1">
+                    <button type="button" id="rngRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Generate</button>
+                    <button type="button" id="rngClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                  </div>
+                </div>
+              </div>
+              <p id="rngResult" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="rngError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: Password Generator -->
+          <article id="tool-password-generator" data-tool-panel="password-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Password Generator</h3>
+                <p class="text-xs text-slate-400">Create random passwords with letters, numbers and symbols.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-[11px] font-medium border border-emerald-500/40">Security</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-4 gap-3 items-end">
+                <div>
+                  <label for="pwLength" class="block text-xs font-medium text-slate-200">Password length</label>
+                  <input id="pwLength" type="number" min="4" max="64" value="12" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div class="flex flex-col gap-1 text-xs text-slate-300">
+                  <label class="inline-flex items-center gap-1 mt-1">
+                    <input type="checkbox" id="pwLower" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Lowercase (a-z)</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="checkbox" id="pwUpper" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Uppercase (A-Z)</span>
+                  </label>
+                </div>
+                <div class="flex flex-col gap-1 text-xs text-slate-300">
+                  <label class="inline-flex items-center gap-1 mt-1">
+                    <input type="checkbox" id="pwNumbers" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Numbers (0-9)</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="checkbox" id="pwSymbols" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                    <span>Symbols (!@#$...)</span>
+                  </label>
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="pwRun" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Generate</button>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="pwOutput" class="block text-xs font-medium text-slate-200">Generated password</label>
+                <div class="flex flex-wrap items-center gap-2">
+                  <input id="pwOutput" type="text" class="flex-1 text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50 placeholder:text-slate-500" placeholder="Your password will appear here" readonly />
+                  <button type="button" data-copy-target="pwOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy</button>
+                </div>
+                <p id="pwError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <p class="text-[11px] text-slate-500">Passwords are generated in your browser. For highly sensitive accounts, use a dedicated password manager.</p>
+            </div>
+          </article>
+
+          <!-- Tool: Reading Time Calculator -->
+          <article id="tool-reading-time-calculator" data-tool-panel="reading-time-calculator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Reading Time Calculator</h3>
+                <p class="text-xs text-slate-400">Estimate how long it will take to read your text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="rtInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="rtInput" class="w-full min-h-[140px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste your article, blog post or script here..."></textarea>
+              </div>
+              <div class="flex flex-wrap items-end gap-3">
+                <div>
+                  <label for="rtWpm" class="block text-xs font-medium text-slate-200">Words per minute</label>
+                  <input id="rtWpm" type="number" min="50" max="400" value="200" class="w-28 text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <div class="flex gap-2">
+                  <button type="button" id="rtRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Calculate</button>
+                  <button type="button" id="rtClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="rtResult" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="rtError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: Readability Checker -->
+          <article id="tool-readability-checker" data-tool-panel="readability-checker" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Readability Checker</h3>
+                <p class="text-xs text-slate-400">Get simple Flesch Reading Ease and grade level estimates.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div>
+                <label for="readabilityInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="readabilityInput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste the content you want to analyze..."></textarea>
+              </div>
+              <div class="flex gap-2">
+                <button type="button" id="readabilityRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Check readability</button>
+                <button type="button" id="readabilityClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+              </div>
+              <p id="readabilityResult" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <p id="readabilityError" class="text-xs text-rose-400 hidden"></p>
+            </div>
+          </article>
+
+          <!-- Tool: Word Frequency Counter -->
+          <article id="tool-word-frequency-counter" data-tool-panel="word-frequency-counter" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Word Frequency Counter</h3>
+                <p class="text-xs text-slate-400">See which words appear most often in your text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start text-sm">
+              <div class="space-y-2">
+                <label for="wfInput" class="block text-xs font-medium text-slate-200">Your text</label>
+                <textarea id="wfInput" class="w-full min-h-[160px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste your content here..."></textarea>
+                <div class="flex flex-wrap items-end gap-3 mt-1 text-xs text-slate-300">
+                  <div>
+                    <label for="wfMin" class="block text-[11px] font-medium text-slate-200">Minimum frequency</label>
+                    <input id="wfMin" type="number" min="1" value="1" class="w-24 text-xs border border-slate-700 rounded-lg px-2 py-1 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-1 focus:ring-sky-500" />
+                  </div>
+                  <div class="flex gap-2 mt-3 md:mt-0">
+                    <button type="button" id="wfRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Analyze</button>
+                    <button type="button" id="wfClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                  </div>
+                </div>
+                <p id="wfError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <div class="space-y-2">
+                <p id="wfSummary" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+                <label for="wfOutput" class="block text-xs font-medium text-slate-200">Word frequencies</label>
+                <textarea id="wfOutput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="word - count" readonly></textarea>
+                <button type="button" data-copy-target="wfOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy list</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Text Difference Checker -->
+          <article id="tool-text-diff-checker" data-tool-panel="text-diff-checker" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Text Difference Checker</h3>
+                <p class="text-xs text-slate-400">Compare two blocks of text and see what changed.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Text tool</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="grid md:grid-cols-2 gap-3 items-start">
+                <div class="space-y-2">
+                  <label for="diffInputA" class="block text-xs font-medium text-slate-200">Original text</label>
+                  <textarea id="diffInputA" class="w-full min-h-[140px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste the original version here..."></textarea>
+                </div>
+                <div class="space-y-2">
+                  <label for="diffInputB" class="block text-xs font-medium text-slate-200">Modified text</label>
+                  <textarea id="diffInputB" class="w-full min-h-[140px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste the new version here..."></textarea>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button type="button" id="diffRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-sm font-semibold hover:bg-sky-400">Compare</button>
+                <button type="button" id="diffClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-xs text-slate-200 hover:bg-slate-800">Clear</button>
+              </div>
+              <p id="diffError" class="text-xs text-rose-400 hidden"></p>
+              <p id="diffSummary" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+              <div class="grid md:grid-cols-2 gap-3 text-xs">
+                <div>
+                  <label for="diffRemoved" class="block text-[11px] font-medium text-slate-200">Lines only in original</label>
+                  <textarea id="diffRemoved" class="w-full min-h-[120px] font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" readonly></textarea>
+                </div>
+                <div>
+                  <label for="diffAdded" class="block text-[11px] font-medium text-slate-200">Lines only in modified</label>
+                  <textarea id="diffAdded" class="w-full min-h-[120px] font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" readonly></textarea>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Email Extractor -->
+          <article id="tool-email-extractor" data-tool-panel="email-extractor" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Email Extractor</h3>
+                <p class="text-xs text-slate-400">Extract email addresses from any block of text.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start text-sm">
+              <div class="space-y-2">
+                <label for="emailInput" class="block text-xs font-medium text-slate-200">Input text</label>
+                <textarea id="emailInput" class="w-full min-h-[150px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste text, logs or HTML here..."></textarea>
+                <div class="flex gap-2 mt-1">
+                  <button type="button" id="emailRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Extract emails</button>
+                  <button type="button" id="emailClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+                <p id="emailError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <div class="space-y-2">
+                <p id="emailSummary" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+                <label for="emailOutput" class="block text-xs font-medium text-slate-200">Emails found</label>
+                <textarea id="emailOutput" class="w-full min-h-[150px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Each email on its own line" readonly></textarea>
+                <button type="button" data-copy-target="emailOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy list</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: URL Extractor -->
+          <article id="tool-url-extractor" data-tool-panel="url-extractor" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">URL Extractor</h3>
+                <p class="text-xs text-slate-400">Extract all URLs from text, logs or HTML snippets.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start text-sm">
+              <div class="space-y-2">
+                <label for="urlExtInput" class="block text-xs font-medium text-slate-200">Input text</label>
+                <textarea id="urlExtInput" class="w-full min-h-[150px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="Paste any text or HTML that may contain URLs..."></textarea>
+                <div class="flex gap-2 mt-1">
+                  <button type="button" id="urlExtRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Extract URLs</button>
+                  <button type="button" id="urlExtClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+                <p id="urlExtError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <div class="space-y-2">
+                <p id="urlExtSummary" class="text-xs text-slate-300 bg-slate-950/60 border border-slate-700 rounded-lg px-3 py-2 hidden"></p>
+                <label for="urlExtOutput" class="block text-xs font-medium text-slate-200">URLs found</label>
+                <textarea id="urlExtOutput" class="w-full min-h-[150px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Each URL on its own line" readonly></textarea>
+                <button type="button" data-copy-target="urlExtOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy list</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: robots.txt Generator -->
+          <article id="tool-robots-txt-generator" data-tool-panel="robots-txt-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">robots.txt Generator</h3>
+                <p class="text-xs text-slate-400">Create a simple robots.txt file for your website.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start text-sm">
+              <div class="space-y-2">
+                <div class="space-y-1 text-xs text-slate-300">
+                  <p class="font-medium text-slate-200">Robots rules</p>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="radio" name="robotsMode" value="allow" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                    <span>Allow all robots (recommended for most sites)</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="radio" name="robotsMode" value="disallow" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                    <span>Block all robots</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1">
+                    <input type="radio" name="robotsMode" value="block-folder" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                    <span>Block a specific folder</span>
+                  </label>
+                  <input id="robotsFolder" type="text" class="mt-1 w-full text-xs border border-slate-700 rounded-lg px-2 py-1 bg-slate-950/60 text-slate-50 placeholder:text-slate-500" placeholder="e.g. /admin/" />
+                </div>
+                <div class="space-y-1 text-xs text-slate-300 mt-3">
+                  <label for="robotsSitemap" class="block text-[11px] font-medium text-slate-200">Sitemap URL (optional)</label>
+                  <input id="robotsSitemap" type="text" class="w-full text-xs border border-slate-700 rounded-lg px-2 py-1 bg-slate-950/60 text-slate-50 placeholder:text-slate-500" placeholder="e.g. https://example.com/sitemap.xml" />
+                </div>
+                <div class="flex gap-2 mt-3">
+                  <button type="button" id="robotsRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Generate robots.txt</button>
+                  <button type="button" id="robotsClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+                <p id="robotsError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <div class="space-y-2">
+                <label for="robotsOutput" class="block text-xs font-medium text-slate-200">Generated robots.txt</label>
+                <textarea id="robotsOutput" class="w-full min-h-[160px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Your robots.txt content will appear here..." readonly></textarea>
+                <button type="button" data-copy-target="robotsOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy robots.txt</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Sitemap.xml Generator -->
+          <article id="tool-sitemap-generator" data-tool-panel="sitemap-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Sitemap.xml Generator</h3>
+                <p class="text-xs text-slate-400">Create a basic XML sitemap from your URLs.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-300 text-[11px] font-medium border border-fuchsia-500/40">SEO</span>
+            </header>
+
+            <div class="grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1.2fr)] gap-4 items-start text-sm">
+              <div class="space-y-2">
+                <label for="sitemapBase" class="block text-xs font-medium text-slate-200">Site base URL</label>
+                <input id="sitemapBase" type="text" class="w-full text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. example.com or https://example.com" />
+                <label for="sitemapPaths" class="block text-xs font-medium text-slate-200 mt-2">Page paths (one per line)</label>
+                <textarea id="sitemapPaths" class="w-full min-h-[140px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 placeholder:text-slate-500" placeholder="/
+/word-counter/
+/percentage-calculator/"></textarea>
+                <div class="flex gap-2 mt-2">
+                  <button type="button" id="sitemapRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Generate sitemap</button>
+                  <button type="button" id="sitemapClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+                <p id="sitemapError" class="text-xs text-rose-400 hidden"></p>
+              </div>
+              <div class="space-y-2">
+                <label for="sitemapOutput" class="block text-xs font-medium text-slate-200">Generated sitemap.xml</label>
+                <textarea id="sitemapOutput" class="w-full min-h-[180px] text-xs font-mono border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Sitemap XML will appear here..." readonly></textarea>
+                <button type="button" data-copy-target="sitemapOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy sitemap</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tool: Random Word Generator -->
+          <article id="tool-random-word-generator" data-tool-panel="random-word-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Random Word Generator</h3>
+                <p class="text-xs text-slate-400">Generate random words for ideas, writing and games.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-sky-500/10 text-sky-300 text-[11px] font-medium border border-sky-500/40">Random</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex flex-wrap items-end gap-3">
+                <div>
+                  <label for="rwCount" class="block text-xs font-medium text-slate-200">Number of words</label>
+                  <input id="rwCount" type="number" min="1" max="50" value="10" class="w-24 text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <label class="inline-flex items-center gap-1 text-xs text-slate-300 mt-1">
+                  <input type="checkbox" id="rwUnique" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" />
+                  <span>Unique words only</span>
+                </label>
+                <div class="flex gap-2 mt-1 md:mt-0">
+                  <button type="button" id="rwRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Generate</button>
+                  <button type="button" id="rwClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="rwError" class="text-xs text-rose-400 hidden"></p>
+              <label for="rwOutput" class="block text-xs font-medium text-slate-200">Random words</label>
+              <textarea id="rwOutput" class="w-full min-h-[140px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Generated words will appear here..." readonly></textarea>
+              <button type="button" data-copy-target="rwOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy words</button>
+            </div>
+          </article>
+
+          <!-- Tool: Username Generator -->
+          <article id="tool-username-generator" data-tool-panel="username-generator" class="bg-slate-900/80 border border-slate-800 rounded-2xl shadow-lg p-4 space-y-4 hidden">
+            <header class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight text-slate-50">Username Generator</h3>
+                <p class="text-xs text-slate-400">Generate fun usernames using random words and numbers.</p>
+              </div>
+              <span class="inline-flex items-center px-2 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-[11px] font-medium border border-indigo-500/40">Content</span>
+            </header>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex flex-wrap items-end gap-3">
+                <div>
+                  <label for="userCount" class="block text-xs font-medium text-slate-200">Number of usernames</label>
+                  <input id="userCount" type="number" min="1" max="30" value="5" class="w-24 text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/60 text-slate-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+                </div>
+                <label class="inline-flex items-center gap-1 text-xs text-slate-300 mt-1">
+                  <input type="checkbox" id="userNumbers" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                  <span>Add numbers</span>
+                </label>
+                <label class="inline-flex items-center gap-1 text-xs text-slate-300 mt-1">
+                  <input type="checkbox" id="userSeparator" class="h-3.5 w-3.5 text-sky-500 border-slate-600 bg-slate-900" checked />
+                  <span>Use underscore separator</span>
+                </label>
+                <div class="flex gap-2 mt-1 md:mt-0">
+                  <button type="button" id="userRun" class="inline-flex flex-1 items-center justify-center px-3 py-2 rounded-full bg-sky-500 text-slate-950 text-xs font-semibold hover:bg-sky-400">Generate</button>
+                  <button type="button" id="userClear" class="inline-flex items-center justify-center px-3 py-2 rounded-full border border-slate-700 bg-slate-900 text-[11px] text-slate-200 hover:bg-slate-800">Clear</button>
+                </div>
+              </div>
+              <p id="userError" class="text-xs text-rose-400 hidden"></p>
+              <label for="userOutput" class="block text-xs font-medium text-slate-200">Usernames</label>
+              <textarea id="userOutput" class="w-full min-h-[140px] text-sm border border-slate-700 rounded-lg px-3 py-2 bg-slate-950/40 text-slate-50" placeholder="Generated usernames will appear here..." readonly></textarea>
+              <button type="button" data-copy-target="userOutput" class="inline-flex items-center px-2.5 py-1.5 rounded-full border border-slate-700 bg-slate-950 text-xs text-slate-200 hover:bg-slate-800">Copy usernames</button>
+            </div>
+          </article>
+
+          <!-- Ad slot: below tool content -->
+          <div class="border border-dashed border-slate-800 rounded-xl bg-slate-900/70 flex items-center justify-center h-24 text-[11px] text-slate-500">
+            Ad slot: below tool (in-content)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="space-y-3">
+      <h2 class="text-xl font-semibold tracking-tight text-slate-50">About Text Tool Hub</h2>
+      <p class="text-sm text-slate-300">Text Tool Hub is a collection of lightweight, browser-based tools for writers, students, developers and content marketers. Every tool runs entirely in your browser: we don&apos;t store, log or transmit your text or code to any server.</p>
+      <p class="text-sm text-slate-300">The goal is to help you get small tasks done quickly – counting words, cleaning up text, formatting JSON, encoding/decoding data or running quick percentage calculations – without installing software or creating an account.</p>
+      <p class="text-sm text-slate-300">As the site grows, we&apos;ll keep adding focused, single-purpose tools with clear interfaces and zero clutter.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="space-y-3">
+      <h2 class="text-xl font-semibold tracking-tight text-slate-50">Contact</h2>
+      <p class="text-sm text-slate-300">Have an idea for a new tool or noticed a bug? Once you put this site online, you can update this section with a contact email address or a simple contact form link.</p>
+      <p class="text-sm text-slate-300">For now, you can keep a note to yourself here as a reminder to:</p>
+      <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
+        <li>Add a dedicated contact page when you deploy.</li>
+        <li>Include links to your Privacy Policy and Terms of Use in the footer.</li>
+        <li>Set up analytics (for example, Google Analytics) to track which tools are used most.</li>
+      </ul>
+    </section>
+
+    <!-- Simple FAQ -->
+    <section class="space-y-3">
+      <h2 class="text-xl font-semibold tracking-tight text-slate-50">FAQ</h2>
+      <div class="space-y-2 text-sm text-slate-200">
+        <details class="bg-slate-900/70 border border-slate-800 rounded-lg px-3 py-2">
+          <summary class="cursor-pointer font-medium">Are all tools really free?</summary>
+          <p class="mt-1 text-slate-300 text-sm">Yes. The plan is to keep all tools free to use and support the site only with privacy-friendly ads.</p>
+        </details>
+        <details class="bg-slate-900/70 border border-slate-800 rounded-lg px-3 py-2">
+          <summary class="cursor-pointer font-medium">Do you store my text or code?</summary>
+          <p class="mt-1 text-slate-300 text-sm">No. All calculations and processing happen in your browser. We don&apos;t store your inputs on a server.</p>
+        </details>
+        <details class="bg-slate-900/70 border border-slate-800 rounded-lg px-3 py-2">
+          <summary class="cursor-pointer font-medium">Will these tools work on my phone?</summary>
+          <p class="mt-1 text-slate-300 text-sm">Yes. The layout is responsive and designed to work on phones, tablets and desktops.</p>
+        </details>
+        <details class="bg-slate-900/70 border border-slate-800 rounded-lg px-3 py-2">
+          <summary class="cursor-pointer font-medium">Can I suggest a new tool?</summary>
+          <p class="mt-1 text-slate-300 text-sm">Absolutely. Once the site is live, add your preferred contact method so visitors can send ideas and feedback.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-10 border-t border-slate-800 bg-slate-950/95">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+      <span>&copy; <span id="year"></span> Text Tool Hub. All rights reserved.</span>
+      <div class="flex gap-3">
+        <a href="#" class="hover:text-sky-300">Privacy Policy</a>
+        <a href="#" class="hover:text-sky-300">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD schemas for sample tools (simplified) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Sample tools on Text Tool Hub",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://example.com/#tool-word-counter",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Word Counter",
+          "applicationCategory": "Utility",
+          "operatingSystem": "Any",
+          "description": "Free online word counter that runs in your browser.",
+          "offers": {"@type": "Offer", "price": 0, "priceCurrency": "USD"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://example.com/#tool-case-converter",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Text Case Converter",
+          "applicationCategory": "Utility",
+          "operatingSystem": "Any",
+          "description": "Convert text between different capitalization styles in your browser.",
+          "offers": {"@type": "Offer", "price": 0, "priceCurrency": "USD"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://example.com/#tool-percentage-calculator",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Percentage Calculator",
+          "applicationCategory": "Calculator",
+          "operatingSystem": "Any",
+          "description": "Simple percentage calculator for everyday use.",
+          "offers": {"@type": "Offer", "price": 0, "priceCurrency": "USD"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://example.com/#tool-json-formatter",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "JSON Formatter & Validator",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Any",
+          "description": "Format and validate JSON client-side in your browser.",
+          "offers": {"@type": "Offer", "price": 0, "priceCurrency": "USD"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://example.com/#tool-base64",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Base64 Encoder / Decoder",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Any",
+          "description": "Encode and decode Base64 strings locally in your browser.",
+          "offers": {"@type": "Offer", "price": 0, "priceCurrency": "USD"}
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Main JavaScript -->
+  <script>
+    // Set current year and initialise tools
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Tool navigation (show/hide tool panels)
+      const toolButtons = document.querySelectorAll('[data-tool-button]');
+      const toolPanels = document.querySelectorAll('[data-tool-panel]');
+      let isRoutingFromHash = false;
+
+      function activateTool(name, fromHash = false) {
+        if (!name) return;
+        // Show/hide panels
+        toolPanels.forEach(panel => {
+          panel.classList.toggle('hidden', panel.dataset.toolPanel !== name);
+        });
+        // Highlight active button
+        toolButtons.forEach(btn => {
+          const isActive = btn.dataset.toolButton === name;
+          btn.classList.toggle('text-sky-300', isActive);
+          btn.classList.toggle('font-semibold', isActive);
+        });
+        // Update URL hash when change comes from UI, not from hashchange
+        if (!fromHash) {
+          const desiredHash = '#/' + name;
+          if (window.location.hash !== desiredHash) {
+            isRoutingFromHash = true;
+            window.location.hash = desiredHash;
+            setTimeout(() => {
+              isRoutingFromHash = false;
+            }, 0);
+          }
+        }
+      }
+
+      toolButtons.forEach(btn => {
+        btn.addEventListener('click', () => activateTool(btn.dataset.toolButton));
+      });
+
+      // Jump links from featured cards
+      document.querySelectorAll('[data-jump-tool]').forEach(link => {
+        link.addEventListener('click', () => {
+          const toolName = link.dataset.jumpTool;
+          activateTool(toolName);
+        });
+      });
+
+      function getToolFromHash() {
+        const hash = window.location.hash || '';
+        // Expect format "#/tool-name"
+        const match = hash.match(/^#\/(.+)/);
+        if (match && match[1]) {
+          const slug = match[1];
+          const panel = document.querySelector('[data-tool-panel="' + slug + '"]');
+          if (panel) return slug;
+        }
+        return null;
+      }
+
+      window.addEventListener('hashchange', () => {
+        if (isRoutingFromHash) return;
+        const toolFromHash = getToolFromHash();
+        if (toolFromHash) {
+          activateTool(toolFromHash, true);
+        }
+      });
+
+      // Activate initial tool based on hash or default to the first button
+      const initialFromHash = getToolFromHash();
+      if (initialFromHash) {
+        activateTool(initialFromHash, true);
+      } else if (toolButtons.length) {
+        activateTool(toolButtons[0].dataset.toolButton, true);
+      }
+
+      // Utility: copy to clipboard
+      function copyFromElement(el) {
+        if (!el) return;
+        const value = 'value' in el ? el.value : el.textContent;
+        if (!navigator.clipboard) {
+          const temp = document.createElement('textarea');
+          temp.value = value;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          document.body.removeChild(temp);
+        } else {
+          navigator.clipboard.writeText(value).catch(() => {});
+        }
+      }
+
+      document.querySelectorAll('[data-copy-target]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const ids = btn.dataset.copyTarget.split(',');
+          const firstId = ids[0];
+          const target = document.getElementById(firstId.trim());
+          copyFromElement(target);
+        });
+      });
+
+      // Utility: clear fields
+      document.querySelectorAll('[data-clear-target]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const ids = btn.dataset.clearTarget.split(',');
+          ids.forEach(id => {
+            const el = document.getElementById(id.trim());
+            if (!el) return;
+            if ('value' in el) {
+              el.value = '';
+              if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
+                el.dispatchEvent(new Event('input'));
+              }
+            }
+          });
+        });
+      });
+
+      // Word counter logic
+      const wcInput = document.getElementById('wordCounterInput');
+      const wcWords = document.getElementById('wordCounterWords');
+      const wcChars = document.getElementById('wordCounterChars');
+      const wcCharsNoSpaces = document.getElementById('wordCounterCharsNoSpaces');
+      const wcSentences = document.getElementById('wordCounterSentences');
+      const wcParagraphs = document.getElementById('wordCounterParagraphs');
+      const wcReadingTime = document.getElementById('wordCounterReadingTime');
+
+      function updateWordCounter() {
+        if (!wcInput) return;
+        const text = wcInput.value || '';
+        const trimmed = text.trim();
+        const words = trimmed ? trimmed.split(/\s+/).length : 0;
+        const chars = text.length;
+        const charsNoSpaces = text.replace(/\s+/g, '').length;
+        const sentencesMatch = trimmed ? trimmed.split(/[.!?]+\s*/).filter(Boolean) : [];
+        const sentences = sentencesMatch.length;
+        const parasMatch = trimmed ? trimmed.split(/\n{2,}|\r{2,}/).filter(p => p.trim().length) : [];
+        const paragraphs = parasMatch.length || (trimmed ? 1 : 0);
+        const minutes = words ? Math.max(1, Math.round(words / 200)) : 0;
+
+        wcWords.textContent = words;
+        wcChars.textContent = chars;
+        wcCharsNoSpaces.textContent = charsNoSpaces;
+        wcSentences.textContent = sentences;
+        wcParagraphs.textContent = paragraphs;
+        wcReadingTime.textContent = minutes ? `${minutes} min` : '0 min';
+      }
+
+      if (wcInput) {
+        wcInput.addEventListener('input', updateWordCounter);
+        updateWordCounter();
+      }
+
+      // Character counter logic
+      const ccInput = document.getElementById('charCounterInput');
+      const ccChars = document.getElementById('charCounterChars');
+      const ccCharsNoSpaces = document.getElementById('charCounterCharsNoSpaces');
+      const ccWords = document.getElementById('charCounterWords');
+      const ccLines = document.getElementById('charCounterLines');
+
+      function updateCharCounter() {
+        if (!ccInput) return;
+        const text = ccInput.value || '';
+        const trimmed = text.trim();
+        const chars = text.length;
+        const charsNo = text.replace(/\s+/g, '').length;
+        const words = trimmed ? trimmed.split(/\s+/).length : 0;
+        const lines = text ? text.split(/\r\n|\n|\r/).length : 0;
+        if (ccChars) ccChars.textContent = chars;
+        if (ccCharsNoSpaces) ccCharsNoSpaces.textContent = charsNo;
+        if (ccWords) ccWords.textContent = words;
+        if (ccLines) ccLines.textContent = lines;
+      }
+
+      if (ccInput) {
+        ccInput.addEventListener('input', updateCharCounter);
+        updateCharCounter();
+      }
+
+      // Line counter logic
+      const lineCounterInput = document.getElementById('lineCounterInput');
+      const lineCounterLines = document.getElementById('lineCounterLines');
+      const lineCounterWords = document.getElementById('lineCounterWords');
+      const lineCounterChars = document.getElementById('lineCounterChars');
+
+      function updateLineCounter() {
+        if (!lineCounterInput || !lineCounterLines || !lineCounterWords || !lineCounterChars) return;
+        const text = lineCounterInput.value || '';
+        const lines = text ? text.split(/\r\n|\n|\r/).length : 0;
+        const trimmed = text.trim();
+        const words = trimmed ? trimmed.split(/\s+/).length : 0;
+        const chars = text.length;
+        lineCounterLines.textContent = lines;
+        lineCounterWords.textContent = words;
+        lineCounterChars.textContent = chars;
+      }
+
+      if (lineCounterInput) {
+        lineCounterInput.addEventListener('input', updateLineCounter);
+        updateLineCounter();
+      }
+
+      // Case converter logic
+      const caseInput = document.getElementById('caseInput');
+      const caseOutput = document.getElementById('caseOutput');
+      document.querySelectorAll('.case-action').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!caseInput || !caseOutput) return;
+          const text = caseInput.value;
+          const action = btn.dataset.caseAction;
+          let result = text;
+          if (action === 'upper') {
+            result = text.toUpperCase();
+          } else if (action === 'lower') {
+            result = text.toLowerCase();
+          } else if (action === 'title') {
+            result = text.toLowerCase().replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1));
+          } else if (action === 'sentence') {
+            result = text.toLowerCase().replace(/(^\s*[a-z])|([.!?]\s+[a-z])/g, c => c.toUpperCase());
+          }
+          caseOutput.value = result;
+        });
+      });
+
+      // Remove line breaks logic
+      const removeLbInput = document.getElementById('removeLbInput');
+      const removeLbOutput = document.getElementById('removeLbOutput');
+      const removeLbRun = document.getElementById('removeLbRun');
+
+      function runRemoveLb() {
+        if (!removeLbInput || !removeLbOutput) return;
+        const text = removeLbInput.value || '';
+        const modeInput = document.querySelector('input[name="removeLbMode"]:checked');
+        const mode = modeInput ? modeInput.value : 'all';
+        let result = '';
+        if (mode === 'all') {
+          result = text.replace(/[\r\n]+/g, ' ').replace(/\s+/g, ' ').trim();
+        } else {
+          // keep paragraphs: treat two+ newlines as paragraph markers
+          result = text.replace(/\r\n/g, '\n');
+          result = result.replace(/\n{2,}/g, '<<<PARA>>>');
+          result = result.replace(/\n+/g, ' ');
+          result = result.replace(/\s+/g, ' ').trim();
+          result = result.replace(/<<<PARA>>>/g, '\n\n');
+        }
+        removeLbOutput.value = result;
+      }
+
+      if (removeLbRun) removeLbRun.addEventListener('click', runRemoveLb);
+
+      // Duplicate line remover logic
+      const dupLinesInput = document.getElementById('dupLinesInput');
+      const dupLinesOutput = document.getElementById('dupLinesOutput');
+      const dupLinesRun = document.getElementById('dupLinesRun');
+      const dupLinesCase = document.getElementById('dupLinesCase');
+      const dupLinesRemoveBlank = document.getElementById('dupLinesRemoveBlank');
+
+      function runDupLines() {
+        if (!dupLinesInput || !dupLinesOutput) return;
+        const lines = dupLinesInput.value.split(/\r?\n/);
+        const caseSensitive = dupLinesCase && dupLinesCase.checked;
+        const removeBlank = !dupLinesRemoveBlank || dupLinesRemoveBlank.checked;
+        const seen = new Set();
+        const result = [];
+        for (let line of lines) {
+          if (removeBlank && !line.trim()) continue;
+          const key = caseSensitive ? line : line.toLowerCase();
+          if (seen.has(key)) continue;
+          seen.add(key);
+          result.push(line);
+        }
+        dupLinesOutput.value = result.join('\n');
+      }
+
+      if (dupLinesRun) dupLinesRun.addEventListener('click', runDupLines);
+
+      // Text sorter logic
+      const textSortInput = document.getElementById('textSortInput');
+      const textSortOutput = document.getElementById('textSortOutput');
+      const textSortOrder = document.getElementById('textSortOrder');
+      const textSortRemoveBlank = document.getElementById('textSortRemoveBlank');
+      const textSortRun = document.getElementById('textSortRun');
+
+      function runTextSort() {
+        if (!textSortInput || !textSortOutput || !textSortOrder) return;
+        const raw = textSortInput.value || '';
+        let lines = raw.split(/\r?\n/);
+        const removeBlank = textSortRemoveBlank && textSortRemoveBlank.checked;
+        if (removeBlank) {
+          lines = lines.filter(l => l.trim().length > 0);
+        }
+        lines.sort((a, b) => a.localeCompare(b));
+        if (textSortOrder.value === 'desc') {
+          lines.reverse();
+        }
+        textSortOutput.value = lines.join('\n');
+      }
+
+      if (textSortRun) textSortRun.addEventListener('click', runTextSort);
+
+      // Percentage calculator logic
+      const pctX = document.getElementById('pctX');
+      const pctY = document.getElementById('pctY');
+      const pctResultWrapper = document.getElementById('pctResultWrapper');
+      const pctResult = document.getElementById('pctResult');
+      const pctError = document.getElementById('pctError');
+      const pctCalculate = document.getElementById('pctCalculate');
+      const pctClear = document.getElementById('pctClear');
+
+      function getPctMode() {
+        const checked = document.querySelector('input[name="pctMode"]:checked');
+        return checked ? checked.value : 'of';
+      }
+
+      function calculatePercentage() {
+        if (!pctX || !pctY || !pctResult || !pctResultWrapper || !pctError) return;
+        const x = parseFloat(pctX.value);
+        const y = parseFloat(pctY.value);
+        pctError.classList.add('hidden');
+        pctResultWrapper.classList.add('hidden');
+
+        if (Number.isNaN(x) || Number.isNaN(y)) {
+          pctError.textContent = 'Please enter numbers for both X and Y.';
+          pctError.classList.remove('hidden');
+          return;
+        }
+
+        const mode = getPctMode();
+        let text = '';
+        if (mode === 'of') {
+          const value = (x / 100) * y;
+          text = `${x}% of ${y} is ${value}`;
+        } else if (mode === 'change') {
+          if (x === 0) {
+            pctError.textContent = 'Percentage change from 0 is not defined.';
+            pctError.classList.remove('hidden');
+            return;
+          }
+          const diff = y - x;
+          const pct = (diff / x) * 100;
+          const sign = pct > 0 ? 'increase' : (pct < 0 ? 'decrease' : 'no change');
+          text = `Change from ${x} to ${y} is ${pct.toFixed(2)}% (${sign}).`;
+        }
+        pctResult.textContent = text;
+        pctResultWrapper.classList.remove('hidden');
+      }
+
+      if (pctCalculate) pctCalculate.addEventListener('click', calculatePercentage);
+      if (pctClear) pctClear.addEventListener('click', () => {
+        if (pctX) pctX.value = '';
+        if (pctY) pctY.value = '';
+        if (pctResultWrapper) pctResultWrapper.classList.add('hidden');
+        if (pctError) pctError.classList.add('hidden');
+      });
+
+      // Discount calculator logic
+      const discOriginal = document.getElementById('discOriginal');
+      const discPercent = document.getElementById('discPercent');
+      const discRun = document.getElementById('discRun');
+      const discClear = document.getElementById('discClear');
+      const discResult = document.getElementById('discResult');
+      const discError = document.getElementById('discError');
+
+      function runDiscount() {
+        if (!discOriginal || !discPercent || !discResult || !discError) return;
+        const original = parseFloat(discOriginal.value);
+        const percent = parseFloat(discPercent.value);
+        discError.classList.add('hidden');
+        discResult.classList.add('hidden');
+        if (Number.isNaN(original) || Number.isNaN(percent)) {
+          discError.textContent = 'Please enter both original price and discount percentage.';
+          discError.classList.remove('hidden');
+          return;
+        }
+        if (original < 0 || percent < 0) {
+          discError.textContent = 'Values cannot be negative.';
+          discError.classList.remove('hidden');
+          return;
+        }
+        const discountAmount = original * (percent / 100);
+        const finalPrice = original - discountAmount;
+        discResult.textContent = `Discount: ${discountAmount.toFixed(2)} | Final price: ${finalPrice.toFixed(2)}`;
+        discResult.classList.remove('hidden');
+      }
+
+      if (discRun) discRun.addEventListener('click', runDiscount);
+      if (discClear) discClear.addEventListener('click', () => {
+        if (discOriginal) discOriginal.value = '';
+        if (discPercent) discPercent.value = '';
+        if (discResult) discResult.classList.add('hidden');
+        if (discError) discError.classList.add('hidden');
+      });
+
+      // Tip calculator logic
+      const tipBill = document.getElementById('tipBill');
+      const tipPercent = document.getElementById('tipPercent');
+      const tipPeople = document.getElementById('tipPeople');
+      const tipRun = document.getElementById('tipRun');
+      const tipClear = document.getElementById('tipClear');
+      const tipResult = document.getElementById('tipResult');
+      const tipError = document.getElementById('tipError');
+
+      function runTipCalc() {
+        if (!tipBill || !tipPercent || !tipResult || !tipError) return;
+        tipError.classList.add('hidden');
+        tipResult.classList.add('hidden');
+        const bill = parseFloat(tipBill.value);
+        const pct = parseFloat(tipPercent.value);
+        const peopleRaw = tipPeople && tipPeople.value ? parseInt(tipPeople.value, 10) : null;
+        if (Number.isNaN(bill) || Number.isNaN(pct)) {
+          tipError.textContent = 'Please enter bill amount and tip percentage.';
+          tipError.classList.remove('hidden');
+          return;
+        }
+        if (bill < 0 || pct < 0) {
+          tipError.textContent = 'Values cannot be negative.';
+          tipError.classList.remove('hidden');
+          return;
+        }
+        const tipAmount = bill * (pct / 100);
+        const total = bill + tipAmount;
+        let message = `Tip: ${tipAmount.toFixed(2)} | Total: ${total.toFixed(2)}`;
+        if (peopleRaw && peopleRaw > 0) {
+          const perPerson = total / peopleRaw;
+          message += ` | Per person (${peopleRaw}): ${perPerson.toFixed(2)}`;
+        }
+        tipResult.textContent = message;
+        tipResult.classList.remove('hidden');
+      }
+
+      if (tipRun) tipRun.addEventListener('click', runTipCalc);
+      if (tipClear) tipClear.addEventListener('click', () => {
+        if (tipBill) tipBill.value = '';
+        if (tipPercent) tipPercent.value = '';
+        if (tipPeople) tipPeople.value = '';
+        if (tipResult) tipResult.classList.add('hidden');
+        if (tipError) tipError.classList.add('hidden');
+      });
+
+      // Age calculator logic
+      const ageDob = document.getElementById('ageDob');
+      const ageAsOf = document.getElementById('ageAsOf');
+      const ageRun = document.getElementById('ageRun');
+      const ageClear = document.getElementById('ageClear');
+      const ageResult = document.getElementById('ageResult');
+      const ageError = document.getElementById('ageError');
+
+      if (ageAsOf) {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        ageAsOf.value = `${yyyy}-${mm}-${dd}`;
+      }
+
+      function runAgeCalc() {
+        if (!ageDob || !ageAsOf || !ageResult || !ageError) return;
+        ageError.classList.add('hidden');
+        ageResult.classList.add('hidden');
+        if (!ageDob.value || !ageAsOf.value) {
+          ageError.textContent = 'Please select both dates.';
+          ageError.classList.remove('hidden');
+          return;
+        }
+        const dob = new Date(ageDob.value);
+        const asOf = new Date(ageAsOf.value);
+        if (Number.isNaN(dob.getTime()) || Number.isNaN(asOf.getTime())) {
+          ageError.textContent = 'Please enter valid dates.';
+          ageError.classList.remove('hidden');
+          return;
+        }
+        if (asOf < dob) {
+          ageError.textContent = 'The as of date cannot be before the date of birth.';
+          ageError.classList.remove('hidden');
+          return;
+        }
+        let years = asOf.getFullYear() - dob.getFullYear();
+        let months = asOf.getMonth() - dob.getMonth();
+        let days = asOf.getDate() - dob.getDate();
+
+        if (days < 0) {
+          months -= 1;
+          const prevMonth = new Date(asOf.getFullYear(), asOf.getMonth(), 0).getDate();
+          days += prevMonth;
+        }
+        if (months < 0) {
+          years -= 1;
+          months += 12;
+        }
+
+        ageResult.textContent = `Age: ${years} year${years !== 1 ? 's' : ''}, ${months} month${months !== 1 ? 's' : ''}, ${days} day${days !== 1 ? 's' : ''}.`;
+        ageResult.classList.remove('hidden');
+      }
+
+      if (ageRun) ageRun.addEventListener('click', runAgeCalc);
+      if (ageClear) ageClear.addEventListener('click', () => {
+        if (ageDob) ageDob.value = '';
+        if (ageAsOf && ageAsOf.value) {
+          const today = new Date();
+          const yyyy = today.getFullYear();
+          const mm = String(today.getMonth() + 1).padStart(2, '0');
+          const dd = String(today.getDate()).padStart(2, '0');
+          ageAsOf.value = `${yyyy}-${mm}-${dd}`;
+        }
+        if (ageResult) ageResult.classList.add('hidden');
+        if (ageError) ageError.classList.add('hidden');
+      });
+
+      // Date difference calculator logic
+      const dateDiffStart = document.getElementById('dateDiffStart');
+      const dateDiffEnd = document.getElementById('dateDiffEnd');
+      const dateDiffRun = document.getElementById('dateDiffRun');
+      const dateDiffClear = document.getElementById('dateDiffClear');
+      const dateDiffResult = document.getElementById('dateDiffResult');
+      const dateDiffError = document.getElementById('dateDiffError');
+
+      function runDateDiff() {
+        if (!dateDiffStart || !dateDiffEnd || !dateDiffResult || !dateDiffError) return;
+        dateDiffError.classList.add('hidden');
+        dateDiffResult.classList.add('hidden');
+        if (!dateDiffStart.value || !dateDiffEnd.value) {
+          dateDiffError.textContent = 'Please select both dates.';
+          dateDiffError.classList.remove('hidden');
+          return;
+        }
+        const start = new Date(dateDiffStart.value);
+        const end = new Date(dateDiffEnd.value);
+        if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
+          dateDiffError.textContent = 'Please enter valid dates.';
+          dateDiffError.classList.remove('hidden');
+          return;
+        }
+        if (end < start) {
+          dateDiffError.textContent = 'End date cannot be before start date.';
+          dateDiffError.classList.remove('hidden');
+          return;
+        }
+        const msPerDay = 1000 * 60 * 60 * 24;
+        const totalDays = Math.round((end - start) / msPerDay);
+
+        let years = end.getFullYear() - start.getFullYear();
+        let months = end.getMonth() - start.getMonth();
+        let days = end.getDate() - start.getDate();
+        if (days < 0) {
+          months -= 1;
+          const prevMonthDays = new Date(end.getFullYear(), end.getMonth(), 0).getDate();
+          days += prevMonthDays;
+        }
+        if (months < 0) {
+          years -= 1;
+          months += 12;
+        }
+
+        dateDiffResult.textContent = `Difference: ${years} year${years !== 1 ? 's' : ''}, ${months} month${months !== 1 ? 's' : ''}, ${days} day${days !== 1 ? 's' : ''} (total ${totalDays} day${totalDays !== 1 ? 's' : ''}).`;
+        dateDiffResult.classList.remove('hidden');
+      }
+
+      if (dateDiffRun) dateDiffRun.addEventListener('click', runDateDiff);
+      if (dateDiffClear) dateDiffClear.addEventListener('click', () => {
+        if (dateDiffStart) dateDiffStart.value = '';
+        if (dateDiffEnd) dateDiffEnd.value = '';
+        if (dateDiffResult) dateDiffResult.classList.add('hidden');
+        if (dateDiffError) dateDiffError.classList.add('hidden');
+      });
+
+      // JSON formatter logic
+      const jsonInput = document.getElementById('jsonInput');
+      const jsonOutput = document.getElementById('jsonOutput');
+      const jsonFormat = document.getElementById('jsonFormat');
+      const jsonMinify = document.getElementById('jsonMinify');
+      const jsonStatus = document.getElementById('jsonStatus');
+
+      function setJsonStatus(message, ok) {
+        if (!jsonStatus) return;
+        jsonStatus.textContent = message;
+        jsonStatus.className = 'text-[11px] ' + (ok ? 'text-emerald-400' : 'text-rose-400');
+      }
+
+      function formatJson(pretty) {
+        if (!jsonInput || !jsonOutput) return;
+        const value = jsonInput.value.trim();
+        if (!value) {
+          jsonOutput.value = '';
+          setJsonStatus('', true);
+          return;
+        }
+        try {
+          const parsed = JSON.parse(value);
+          jsonOutput.value = pretty ? JSON.stringify(parsed, null, 2) : JSON.stringify(parsed);
+          setJsonStatus('Valid JSON', true);
+        } catch (e) {
+          jsonOutput.value = '';
+          setJsonStatus('Invalid JSON: ' + e.message, false);
+        }
+      }
+
+      if (jsonFormat) jsonFormat.addEventListener('click', () => formatJson(true));
+      if (jsonMinify) jsonMinify.addEventListener('click', () => formatJson(false));
+
+      // Base64 logic
+      const b64Input = document.getElementById('b64Input');
+      const b64Output = document.getElementById('b64Output');
+      const b64Encode = document.getElementById('b64Encode');
+      const b64Decode = document.getElementById('b64Decode');
+      const b64Status = document.getElementById('b64Status');
+
+      function setB64Status(message, ok) {
+        if (!b64Status) return;
+        b64Status.textContent = message;
+        b64Status.className = 'text-[11px] ' + (ok ? 'text-emerald-400' : 'text-rose-400');
+      }
+
+      if (b64Encode) b64Encode.addEventListener('click', () => {
+        if (!b64Input || !b64Output) return;
+        try {
+          b64Output.value = btoa(unescape(encodeURIComponent(b64Input.value)));
+          setB64Status('Encoded successfully', true);
+        } catch (e) {
+          b64Output.value = '';
+          setB64Status('Encoding error', false);
+        }
+      });
+
+      if (b64Decode) b64Decode.addEventListener('click', () => {
+        if (!b64Input || !b64Output) return;
+        try {
+          b64Output.value = decodeURIComponent(escape(atob(b64Input.value.trim())));
+          setB64Status('Decoded successfully', true);
+        } catch (e) {
+          b64Output.value = '';
+          setB64Status('Decoding error - not valid Base64?', false);
+        }
+      });
+
+      // URL encoder/decoder logic
+      const urlInput = document.getElementById('urlInput');
+      const urlOutput = document.getElementById('urlOutput');
+      const urlEncode = document.getElementById('urlEncode');
+      const urlDecode = document.getElementById('urlDecode');
+      const urlStatus = document.getElementById('urlStatus');
+
+      function setUrlStatus(message, ok) {
+        if (!urlStatus) return;
+        urlStatus.textContent = message;
+        urlStatus.className = 'text-[11px] ' + (ok ? 'text-emerald-400' : 'text-rose-400');
+      }
+
+      if (urlEncode) urlEncode.addEventListener('click', () => {
+        if (!urlInput || !urlOutput) return;
+        urlOutput.value = encodeURIComponent(urlInput.value || '');
+        setUrlStatus('Encoded successfully', true);
+      });
+
+      if (urlDecode) urlDecode.addEventListener('click', () => {
+        if (!urlInput || !urlOutput) return;
+        try {
+          urlOutput.value = decodeURIComponent(urlInput.value || '');
+          setUrlStatus('Decoded successfully', true);
+        } catch (e) {
+          urlOutput.value = '';
+          setUrlStatus('Decoding error - invalid encoded string?', false);
+        }
+      });
+
+      // HTML entity encoder/decoder logic
+      const htmlEntInput = document.getElementById('htmlEntInput');
+      const htmlEntOutput = document.getElementById('htmlEntOutput');
+      const htmlEntEncode = document.getElementById('htmlEntEncode');
+      const htmlEntDecode = document.getElementById('htmlEntDecode');
+      const htmlEntStatus = document.getElementById('htmlEntStatus');
+
+      function setHtmlEntStatus(message, ok) {
+        if (!htmlEntStatus) return;
+        htmlEntStatus.textContent = message;
+        htmlEntStatus.className = 'text-[11px] ' + (ok ? 'text-emerald-400' : 'text-rose-400');
+      }
+
+      function encodeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function decodeHtml(str) {
+        const div = document.createElement('div');
+        div.innerHTML = str;
+        return div.textContent || '';
+      }
+
+      if (htmlEntEncode) htmlEntEncode.addEventListener('click', () => {
+        if (!htmlEntInput || !htmlEntOutput) return;
+        htmlEntOutput.value = encodeHtml(htmlEntInput.value || '');
+        setHtmlEntStatus('Encoded to HTML entities', true);
+      });
+
+      if (htmlEntDecode) htmlEntDecode.addEventListener('click', () => {
+        if (!htmlEntInput || !htmlEntOutput) return;
+        htmlEntOutput.value = decodeHtml(htmlEntInput.value || '');
+        setHtmlEntStatus('Decoded from HTML entities', true);
+      });
+
+      // SEO title checker logic
+      const seoTitleInput = document.getElementById('seoTitleInput');
+      const seoTitleCount = document.getElementById('seoTitleCount');
+      const seoTitleAdvice = document.getElementById('seoTitleAdvice');
+
+      function updateSeoTitle() {
+        if (!seoTitleInput || !seoTitleCount || !seoTitleAdvice) return;
+        const text = seoTitleInput.value || '';
+        const len = text.length;
+        seoTitleCount.textContent = len;
+        let advice = '';
+        if (!len) {
+          advice = 'Enter a title to see guidance.';
+        } else if (len < 30) {
+          advice = 'Too short: add more detail to describe the page.';
+        } else if (len <= 60) {
+          advice = 'Good length for most search results.';
+        } else if (len <= 70) {
+          advice = 'A bit long: may be truncated on some devices.';
+        } else {
+          advice = 'Too long: likely to be truncated in many cases.';
+        }
+        seoTitleAdvice.textContent = advice;
+      }
+
+      if (seoTitleInput) {
+        seoTitleInput.addEventListener('input', updateSeoTitle);
+        updateSeoTitle();
+      }
+
+      // Meta description checker logic
+      const metaDescInput = document.getElementById('metaDescInput');
+      const metaDescCount = document.getElementById('metaDescCount');
+      const metaDescAdvice = document.getElementById('metaDescAdvice');
+
+      function updateMetaDesc() {
+        if (!metaDescInput || !metaDescCount || !metaDescAdvice) return;
+        const text = metaDescInput.value || '';
+        const len = text.length;
+        metaDescCount.textContent = len;
+        let advice = '';
+        if (!len) {
+          advice = 'Enter a description to see guidance.';
+        } else if (len < 80) {
+          advice = 'Too short: add more detail about the page.';
+        } else if (len <= 160) {
+          advice = 'Good length for many search snippets.';
+        } else if (len <= 200) {
+          advice = 'A bit long: may be truncated in some cases.';
+        } else {
+          advice = 'Too long: likely to be truncated on most devices.';
+        }
+        metaDescAdvice.textContent = advice;
+      }
+
+      if (metaDescInput) {
+        metaDescInput.addEventListener('input', updateMetaDesc);
+        updateMetaDesc();
+      }
+
+      // Keyword density checker logic
+      const kwTextInput = document.getElementById('kwTextInput');
+      const kwPhraseInput = document.getElementById('kwPhraseInput');
+      const kwDensityRun = document.getElementById('kwDensityRun');
+      const kwDensityClear = document.getElementById('kwDensityClear');
+      const kwDensityResult = document.getElementById('kwDensityResult');
+      const kwDensityError = document.getElementById('kwDensityError');
+
+      function runKeywordDensity() {
+        if (!kwTextInput || !kwPhraseInput || !kwDensityResult || !kwDensityError) return;
+        kwDensityError.classList.add('hidden');
+        kwDensityResult.classList.add('hidden');
+        const text = kwTextInput.value.trim();
+        const phrase = kwPhraseInput.value.trim().toLowerCase();
+        if (!text) {
+          kwDensityError.textContent = 'Please paste some content text.';
+          kwDensityError.classList.remove('hidden');
+          return;
+        }
+        if (!phrase) {
+          kwDensityError.textContent = 'Please enter a keyword or phrase to check.';
+          kwDensityError.classList.remove('hidden');
+          return;
+        }
+        const words = text.toLowerCase().match(/\b[\w']+\b/g) || [];
+        const totalWords = words.length;
+        if (!totalWords) {
+          kwDensityError.textContent = 'Could not detect any words in the content.';
+          kwDensityError.classList.remove('hidden');
+          return;
+        }
+        const phraseWords = phrase.split(/\s+/).filter(Boolean);
+        const phraseLen = phraseWords.length;
+        let occurrences = 0;
+        if (phraseLen === 1) {
+          const target = phraseWords[0];
+          occurrences = words.filter(w => w === target).length;
+        } else {
+          for (let i = 0; i <= words.length - phraseLen; i++) {
+            const slice = words.slice(i, i + phraseLen).join(' ');
+            if (slice === phrase) occurrences++;
+          }
+        }
+        const density = (occurrences * phraseLen / totalWords) * 100;
+        kwDensityResult.textContent = `Total words: ${totalWords}. Occurrences: ${occurrences}. Keyword density: ${density.toFixed(2)}%.`;
+        kwDensityResult.classList.remove('hidden');
+      }
+
+      if (kwDensityRun) kwDensityRun.addEventListener('click', runKeywordDensity);
+      if (kwDensityClear) kwDensityClear.addEventListener('click', () => {
+        if (kwTextInput) kwTextInput.value = '';
+        if (kwPhraseInput) kwPhraseInput.value = '';
+        if (kwDensityResult) kwDensityResult.classList.add('hidden');
+        if (kwDensityError) kwDensityError.classList.add('hidden');
+      });
+
+      // Lorem ipsum generator logic
+      const loremParagraphs = document.getElementById('loremParagraphs');
+      const loremOutput = document.getElementById('loremOutput');
+      const loremGenerate = document.getElementById('loremGenerate');
+      const loremBase = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+
+      function runLorem() {
+        if (!loremParagraphs || !loremOutput) return;
+        let count = parseInt(loremParagraphs.value, 10);
+        if (Number.isNaN(count) || count < 1) count = 1;
+        if (count > 10) count = 10;
+        const paras = [];
+        for (let i = 0; i < count; i++) {
+          paras.push(loremBase);
+        }
+        loremOutput.value = paras.join('\n\n');
+      }
+
+      if (loremGenerate) loremGenerate.addEventListener('click', runLorem);
+
+      // Slug generator logic
+      const slugInput = document.getElementById('slugInput');
+      const slugOutput = document.getElementById('slugOutput');
+      const slugGenerate = document.getElementById('slugGenerate');
+
+      function slugify(str) {
+        return str
+          .toLowerCase()
+          .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+          .replace(/-{2,}/g, '-');
+      }
+
+      function runSlug() {
+        if (!slugInput || !slugOutput) return;
+        slugOutput.value = slugify(slugInput.value || '');
+      }
+
+      if (slugGenerate) slugGenerate.addEventListener('click', runSlug);
+
+      // Random number generator logic
+      const rngMin = document.getElementById('rngMin');
+      const rngMax = document.getElementById('rngMax');
+      const rngCount = document.getElementById('rngCount');
+      const rngAllowRepeats = document.getElementById('rngAllowRepeats');
+      const rngRun = document.getElementById('rngRun');
+      const rngClear = document.getElementById('rngClear');
+      const rngResult = document.getElementById('rngResult');
+      const rngError = document.getElementById('rngError');
+
+      function runRng() {
+        if (!rngMin || !rngMax || !rngCount || !rngResult || !rngError) return;
+        rngError.classList.add('hidden');
+        rngResult.classList.add('hidden');
+        const min = parseInt(rngMin.value, 10);
+        const max = parseInt(rngMax.value, 10);
+        let count = parseInt(rngCount.value, 10);
+        const allowRepeats = rngAllowRepeats && rngAllowRepeats.checked;
+        if (Number.isNaN(min) || Number.isNaN(max)) {
+          rngError.textContent = 'Please enter minimum and maximum values.';
+          rngError.classList.remove('hidden');
+          return;
+        }
+        if (max < min) {
+          rngError.textContent = 'Maximum must be greater than or equal to minimum.';
+          rngError.classList.remove('hidden');
+          return;
+        }
+        if (Number.isNaN(count) || count < 1) count = 1;
+        const rangeSize = max - min + 1;
+        if (!allowRepeats && count > rangeSize) {
+          rngError.textContent = 'Count is larger than the number of unique values in the range.';
+          rngError.classList.remove('hidden');
+          return;
+        }
+        const results = [];
+        if (allowRepeats) {
+          for (let i = 0; i < count; i++) {
+            const n = Math.floor(Math.random() * rangeSize) + min;
+            results.push(n);
+          }
+        } else {
+          const available = [];
+          for (let n = min; n <= max; n++) available.push(n);
+          for (let i = 0; i < count; i++) {
+            const idx = Math.floor(Math.random() * available.length);
+            const [val] = available.splice(idx, 1);
+            results.push(val);
+          }
+        }
+        rngResult.textContent = `Random numbers: ${results.join(', ')}`;
+        rngResult.classList.remove('hidden');
+      }
+
+      if (rngRun) rngRun.addEventListener('click', runRng);
+      if (rngClear) rngClear.addEventListener('click', () => {
+        if (rngMin) rngMin.value = '';
+        if (rngMax) rngMax.value = '';
+        if (rngCount) rngCount.value = '1';
+        if (rngResult) rngResult.classList.add('hidden');
+        if (rngError) rngError.classList.add('hidden');
+      });
+
+      // Password generator logic
+      const pwLength = document.getElementById('pwLength');
+      const pwLower = document.getElementById('pwLower');
+      const pwUpper = document.getElementById('pwUpper');
+      const pwNumbers = document.getElementById('pwNumbers');
+      const pwSymbols = document.getElementById('pwSymbols');
+      const pwRun = document.getElementById('pwRun');
+      const pwOutput = document.getElementById('pwOutput');
+      const pwError = document.getElementById('pwError');
+
+      function randomCharFrom(str) {
+        const idx = Math.floor(Math.random() * str.length);
+        return str.charAt(idx);
+      }
+
+      function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+      }
+
+      function runPasswordGen() {
+        if (!pwLength || !pwOutput || !pwError) return;
+        pwError.classList.add('hidden');
+        pwOutput.value = '';
+        let length = parseInt(pwLength.value, 10);
+        if (Number.isNaN(length) || length < 4) {
+          pwError.textContent = 'Please choose a password length of at least 4.';
+          pwError.classList.remove('hidden');
+          return;
+        }
+        if (length > 64) length = 64;
+        const sets = [];
+        const lowerSet = 'abcdefghijklmnopqrstuvwxyz';
+        const upperSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const numberSet = '0123456789';
+        const symbolSet = '!@#$%^&*()-_=+[]{};:,.<>/?';
+        if (pwLower && pwLower.checked) sets.push(lowerSet);
+        if (pwUpper && pwUpper.checked) sets.push(upperSet);
+        if (pwNumbers && pwNumbers.checked) sets.push(numberSet);
+        if (pwSymbols && pwSymbols.checked) sets.push(symbolSet);
+        if (!sets.length) {
+          pwError.textContent = 'Select at least one character type.';
+          pwError.classList.remove('hidden');
+          return;
+        }
+        const allChars = sets.join('');
+        const passwordChars = [];
+        // Ensure at least one from each selected set
+        sets.forEach(set => {
+          passwordChars.push(randomCharFrom(set));
+        });
+        // Fill remaining
+        for (let i = passwordChars.length; i < length; i++) {
+          passwordChars.push(randomCharFrom(allChars));
+        }
+        shuffleArray(passwordChars);
+        pwOutput.value = passwordChars.join('');
+      }
+
+      if (pwRun) pwRun.addEventListener('click', runPasswordGen);
+
+      // Reading time calculator logic
+      const rtInput = document.getElementById('rtInput');
+      const rtWpm = document.getElementById('rtWpm');
+      const rtRun = document.getElementById('rtRun');
+      const rtClear = document.getElementById('rtClear');
+      const rtResult = document.getElementById('rtResult');
+      const rtError = document.getElementById('rtError');
+
+      function runReadingTime() {
+        if (!rtInput || !rtWpm || !rtResult || !rtError) return;
+        rtError.classList.add('hidden');
+        rtResult.classList.add('hidden');
+        const text = rtInput.value.trim();
+        if (!text) {
+          rtError.textContent = 'Please paste or type some text.';
+          rtError.classList.remove('hidden');
+          return;
+        }
+        let wpm = parseInt(rtWpm.value, 10);
+        if (Number.isNaN(wpm) || wpm <= 0) wpm = 200;
+        const words = text.split(/\s+/).length;
+        const minutesFloat = words / wpm;
+        const minutes = Math.floor(minutesFloat);
+        const seconds = Math.round((minutesFloat - minutes) * 60);
+        let human = '';
+        if (minutes === 0 && seconds <= 30) {
+          human = 'Less than 1 minute';
+        } else {
+          human = `${minutes} minute${minutes !== 1 ? 's' : ''}`;
+          if (seconds > 0) human += ` ${seconds} second${seconds !== 1 ? 's' : ''}`;
+        }
+        rtResult.textContent = `Approximate reading time: ${human} (${words} words at ${wpm} words per minute).`;
+        rtResult.classList.remove('hidden');
+      }
+
+      if (rtRun) rtRun.addEventListener('click', runReadingTime);
+      if (rtClear) rtClear.addEventListener('click', () => {
+        if (rtInput) rtInput.value = '';
+        if (rtResult) rtResult.classList.add('hidden');
+        if (rtError) rtError.classList.add('hidden');
+      });
+
+      // Readability checker logic
+      const readabilityInput = document.getElementById('readabilityInput');
+      const readabilityRun = document.getElementById('readabilityRun');
+      const readabilityClear = document.getElementById('readabilityClear');
+      const readabilityResult = document.getElementById('readabilityResult');
+      const readabilityError = document.getElementById('readabilityError');
+
+      function countSyllables(word) {
+        const cleaned = word.toLowerCase().replace(/[^a-z]/g, '');
+        if (!cleaned) return 0;
+        const matches = cleaned.match(/[aeiouy]+/g);
+        let count = matches ? matches.length : 0;
+        if (cleaned.endsWith('e') && count > 1) count--;
+        return count || 1;
+      }
+
+      function runReadability() {
+        if (!readabilityInput || !readabilityResult || !readabilityError) return;
+        readabilityError.classList.add('hidden');
+        readabilityResult.classList.add('hidden');
+        const text = readabilityInput.value.trim();
+        if (!text) {
+          readabilityError.textContent = 'Please paste some text to analyze.';
+          readabilityError.classList.remove('hidden');
+          return;
+        }
+        const sentencesArr = text.split(/[.!?]+/).filter(s => s.trim().length);
+        const sentences = sentencesArr.length || 1;
+        const wordsArr = text.toLowerCase().match(/\b[\w']+\b/g) || [];
+        const words = wordsArr.length || 1;
+        let syllables = 0;
+        for (const w of wordsArr) syllables += countSyllables(w);
+        const wordsPerSentence = words / sentences;
+        const syllablesPerWord = syllables / words;
+        const flesch = 206.835 - 1.015 * wordsPerSentence - 84.6 * syllablesPerWord;
+        const fk = 0.39 * wordsPerSentence + 11.8 * syllablesPerWord - 15.59;
+        let label = '';
+        if (flesch >= 90) label = 'Very easy (understood by an average 11-year-old).';
+        else if (flesch >= 80) label = 'Easy.';
+        else if (flesch >= 70) label = 'Fairly easy.';
+        else if (flesch >= 60) label = 'Standard.';
+        else if (flesch >= 50) label = 'Fairly difficult.';
+        else if (flesch >= 30) label = 'Difficult.';
+        else label = 'Very confusing.';
+        readabilityResult.textContent = `Flesch Reading Ease: ${flesch.toFixed(1)}. Flesch–Kincaid Grade Level: ${fk.toFixed(1)}. ${label}`;
+        readabilityResult.classList.remove('hidden');
+      }
+
+      if (readabilityRun) readabilityRun.addEventListener('click', runReadability);
+      if (readabilityClear) readabilityClear.addEventListener('click', () => {
+        if (readabilityInput) readabilityInput.value = '';
+        if (readabilityResult) readabilityResult.classList.add('hidden');
+        if (readabilityError) readabilityError.classList.add('hidden');
+      });
+
+      // Word frequency counter logic
+      const wfInput = document.getElementById('wfInput');
+      const wfMin = document.getElementById('wfMin');
+      const wfRun = document.getElementById('wfRun');
+      const wfClear = document.getElementById('wfClear');
+      const wfSummary = document.getElementById('wfSummary');
+      const wfOutput = document.getElementById('wfOutput');
+      const wfError = document.getElementById('wfError');
+
+      function runWordFreq() {
+        if (!wfInput || !wfSummary || !wfOutput || !wfMin || !wfError) return;
+        wfError.classList.add('hidden');
+        wfSummary.classList.add('hidden');
+        const text = wfInput.value.trim();
+        if (!text) {
+          wfError.textContent = 'Please paste some text to analyze.';
+          wfError.classList.remove('hidden');
+          return;
+        }
+        const wordsArr = text.toLowerCase().match(/\b[\w']+\b/g) || [];
+        const totalWords = wordsArr.length;
+        if (!totalWords) {
+          wfError.textContent = 'Could not detect any words in the content.';
+          wfError.classList.remove('hidden');
+          return;
+        }
+        const counts = new Map();
+        wordsArr.forEach(w => {
+          counts.set(w, (counts.get(w) || 0) + 1);
+        });
+        let min = parseInt(wfMin.value, 10);
+        if (Number.isNaN(min) || min < 1) min = 1;
+        const entries = Array.from(counts.entries()).filter(([, c]) => c >= min);
+        entries.sort((a, b) => {
+          if (b[1] !== a[1]) return b[1] - a[1];
+          return a[0].localeCompare(b[0]);
+        });
+        const lines = entries.map(([word, count]) => `${word} - ${count}`);
+        wfOutput.value = lines.join('\n');
+        wfSummary.textContent = `Total words: ${totalWords}. Unique words: ${counts.size}. Showing ${entries.length} words with frequency ≥ ${min}.`;
+        wfSummary.classList.remove('hidden');
+      }
+
+      if (wfRun) wfRun.addEventListener('click', runWordFreq);
+      if (wfClear) wfClear.addEventListener('click', () => {
+        if (wfInput) wfInput.value = '';
+        if (wfOutput) wfOutput.value = '';
+        if (wfSummary) wfSummary.classList.add('hidden');
+        if (wfError) wfError.classList.add('hidden');
+      });
+
+      // Text difference checker logic
+      const diffInputA = document.getElementById('diffInputA');
+      const diffInputB = document.getElementById('diffInputB');
+      const diffRun = document.getElementById('diffRun');
+      const diffClear = document.getElementById('diffClear');
+      const diffSummary = document.getElementById('diffSummary');
+      const diffRemoved = document.getElementById('diffRemoved');
+      const diffAdded = document.getElementById('diffAdded');
+      const diffError = document.getElementById('diffError');
+
+      function runDiff() {
+        if (!diffInputA || !diffInputB || !diffSummary || !diffRemoved || !diffAdded || !diffError) return;
+        diffError.classList.add('hidden');
+        diffSummary.classList.add('hidden');
+        diffRemoved.value = '';
+        diffAdded.value = '';
+        const aText = diffInputA.value;
+        const bText = diffInputB.value;
+        if (!aText.trim() || !bText.trim()) {
+          diffError.textContent = 'Please paste both the original and modified text.';
+          diffError.classList.remove('hidden');
+          return;
+        }
+        const linesA = aText.split(/\r?\n/).map(l => l.trim()).filter(l => l.length);
+        const linesB = bText.split(/\r?\n/).map(l => l.trim()).filter(l => l.length);
+        const setA = new Set(linesA);
+        const setB = new Set(linesB);
+        const removed = linesA.filter(l => !setB.has(l));
+        const added = linesB.filter(l => !setA.has(l));
+        const common = linesA.filter(l => setB.has(l));
+        diffRemoved.value = removed.join('\n');
+        diffAdded.value = added.join('\n');
+        diffSummary.textContent = `Common lines: ${common.length}. Lines only in original: ${removed.length}. Lines only in modified: ${added.length}.`;
+        diffSummary.classList.remove('hidden');
+      }
+
+      if (diffRun) diffRun.addEventListener('click', runDiff);
+      if (diffClear) diffClear.addEventListener('click', () => {
+        if (diffInputA) diffInputA.value = '';
+        if (diffInputB) diffInputB.value = '';
+        if (diffRemoved) diffRemoved.value = '';
+        if (diffAdded) diffAdded.value = '';
+        if (diffSummary) diffSummary.classList.add('hidden');
+        if (diffError) diffError.classList.add('hidden');
+      });
+
+      // Email extractor logic
+      const emailInput = document.getElementById('emailInput');
+      const emailRun = document.getElementById('emailRun');
+      const emailClear = document.getElementById('emailClear');
+      const emailOutput = document.getElementById('emailOutput');
+      const emailSummary = document.getElementById('emailSummary');
+      const emailError = document.getElementById('emailError');
+
+      function runEmailExtract() {
+        if (!emailInput || !emailOutput || !emailSummary || !emailError) return;
+        emailError.classList.add('hidden');
+        emailSummary.classList.add('hidden');
+        emailOutput.value = '';
+        const text = emailInput.value;
+        if (!text.trim()) {
+          emailError.textContent = 'Please paste some text that may contain email addresses.';
+          emailError.classList.remove('hidden');
+          return;
+        }
+        const regex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+        const matches = text.match(regex) || [];
+        const unique = Array.from(new Set(matches));
+        if (!unique.length) {
+          emailError.textContent = 'No email addresses were found.';
+          emailError.classList.remove('hidden');
+          return;
+        }
+        emailOutput.value = unique.join('\n');
+        emailSummary.textContent = `Found ${unique.length} unique email${unique.length !== 1 ? 's' : ''}.`;
+        emailSummary.classList.remove('hidden');
+      }
+
+      if (emailRun) emailRun.addEventListener('click', runEmailExtract);
+      if (emailClear) emailClear.addEventListener('click', () => {
+        if (emailInput) emailInput.value = '';
+        if (emailOutput) emailOutput.value = '';
+        if (emailSummary) emailSummary.classList.add('hidden');
+        if (emailError) emailError.classList.add('hidden');
+      });
+
+      // URL extractor logic
+      const urlExtInput = document.getElementById('urlExtInput');
+      const urlExtRun = document.getElementById('urlExtRun');
+      const urlExtClear = document.getElementById('urlExtClear');
+      const urlExtOutput = document.getElementById('urlExtOutput');
+      const urlExtSummary = document.getElementById('urlExtSummary');
+      const urlExtError = document.getElementById('urlExtError');
+
+      function runUrlExtract() {
+        if (!urlExtInput || !urlExtOutput || !urlExtSummary || !urlExtError) return;
+        urlExtError.classList.add('hidden');
+        urlExtSummary.classList.add('hidden');
+        urlExtOutput.value = '';
+        const text = urlExtInput.value;
+        if (!text.trim()) {
+          urlExtError.textContent = 'Please paste some text that may contain URLs.';
+          urlExtError.classList.remove('hidden');
+          return;
+        }
+        const regex = /(https?:\/\/[\S]+|www\.[\S]+)/gi;
+        const matches = text.match(regex) || [];
+        const unique = Array.from(new Set(matches.map(m => m.trim())));
+        if (!unique.length) {
+          urlExtError.textContent = 'No URLs were found.';
+          urlExtError.classList.remove('hidden');
+          return;
+        }
+        urlExtOutput.value = unique.join('\n');
+        urlExtSummary.textContent = `Found ${unique.length} unique URL${unique.length !== 1 ? 's' : ''}.`;
+        urlExtSummary.classList.remove('hidden');
+      }
+
+      if (urlExtRun) urlExtRun.addEventListener('click', runUrlExtract);
+      if (urlExtClear) urlExtClear.addEventListener('click', () => {
+        if (urlExtInput) urlExtInput.value = '';
+        if (urlExtOutput) urlExtOutput.value = '';
+        if (urlExtSummary) urlExtSummary.classList.add('hidden');
+        if (urlExtError) urlExtError.classList.add('hidden');
+      });
+
+      // robots.txt generator logic
+      const robotsFolder = document.getElementById('robotsFolder');
+      const robotsSitemap = document.getElementById('robotsSitemap');
+      const robotsRun = document.getElementById('robotsRun');
+      const robotsClear = document.getElementById('robotsClear');
+      const robotsOutput = document.getElementById('robotsOutput');
+      const robotsError = document.getElementById('robotsError');
+
+      function getRobotsMode() {
+        const checked = document.querySelector('input[name="robotsMode"]:checked');
+        return checked ? checked.value : 'allow';
+      }
+
+      function runRobots() {
+        if (!robotsOutput || !robotsError) return;
+        robotsError.classList.add('hidden');
+        robotsOutput.value = '';
+        const mode = getRobotsMode();
+        let content = 'User-agent: *\n';
+        if (mode === 'allow') {
+          content += 'Disallow:\n';
+        } else if (mode === 'disallow') {
+          content += 'Disallow: /\n';
+        } else if (mode === 'block-folder') {
+          const folder = (robotsFolder && robotsFolder.value.trim()) || '';
+          if (!folder) {
+            robotsError.textContent = 'Please enter a folder path to block, e.g. /admin/.';
+            robotsError.classList.remove('hidden');
+            return;
+          }
+          const normalized = folder.startsWith('/') ? folder : '/' + folder;
+          content += `Disallow: ${normalized}\n`;
+        }
+        const sitemapUrl = robotsSitemap && robotsSitemap.value.trim();
+        if (sitemapUrl) {
+          content += `\nSitemap: ${sitemapUrl}`;
+        }
+        robotsOutput.value = content;
+      }
+
+      if (robotsRun) robotsRun.addEventListener('click', runRobots);
+      if (robotsClear) robotsClear.addEventListener('click', () => {
+        if (robotsFolder) robotsFolder.value = '';
+        if (robotsSitemap) robotsSitemap.value = '';
+        if (robotsOutput) robotsOutput.value = '';
+        if (robotsError) robotsError.classList.add('hidden');
+      });
+
+      // Sitemap generator logic
+      const sitemapBase = document.getElementById('sitemapBase');
+      const sitemapPaths = document.getElementById('sitemapPaths');
+      const sitemapRun = document.getElementById('sitemapRun');
+      const sitemapClear = document.getElementById('sitemapClear');
+      const sitemapOutput = document.getElementById('sitemapOutput');
+      const sitemapError = document.getElementById('sitemapError');
+
+      function runSitemap() {
+        if (!sitemapBase || !sitemapPaths || !sitemapOutput || !sitemapError) return;
+        sitemapError.classList.add('hidden');
+        sitemapOutput.value = '';
+        let base = sitemapBase.value.trim();
+        if (!base) {
+          sitemapError.textContent = 'Please enter your site base URL.';
+          sitemapError.classList.remove('hidden');
+          return;
+        }
+        if (!/^https?:\/\//i.test(base)) {
+          base = 'https://' + base;
+        }
+        if (base.endsWith('/')) base = base.slice(0, -1);
+        const rawPaths = sitemapPaths.value.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        const paths = rawPaths.length ? rawPaths : ['/'];
+        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+        paths.forEach(p => {
+          let path = p;
+          if (!path.startsWith('/')) path = '/' + path;
+          xml += '  <url>\n';
+          xml += `    <loc>${base}${path}</loc>\n`;
+          xml += '  </url>\n';
+        });
+        xml += '</urlset>';
+        sitemapOutput.value = xml;
+      }
+
+      if (sitemapRun) sitemapRun.addEventListener('click', runSitemap);
+      if (sitemapClear) sitemapClear.addEventListener('click', () => {
+        if (sitemapBase) sitemapBase.value = '';
+        if (sitemapPaths) sitemapPaths.value = '';
+        if (sitemapOutput) sitemapOutput.value = '';
+        if (sitemapError) sitemapError.classList.add('hidden');
+      });
+
+      // Random word generator logic
+      const rwCount = document.getElementById('rwCount');
+      const rwUnique = document.getElementById('rwUnique');
+      const rwRun = document.getElementById('rwRun');
+      const rwClear = document.getElementById('rwClear');
+      const rwOutput = document.getElementById('rwOutput');
+      const rwError = document.getElementById('rwError');
+
+      const RANDOM_WORDS = [
+        'apple','ocean','forest','mountain','river','cloud','sunset','thunder','breeze','shadow',
+        'silver','crystal','ember','nova','comet','galaxy','echo','harbor','meadow','valley',
+        'pixel','vector','script','canvas','matrix','orbit','fusion','signal','anchor','beacon',
+        'copper','granite','marble','velvet','canvas','compass','rocket','saturn','neptune','plasma',
+        'raven','phoenix','tiger','panda','falcon','lion','eagle','dragon','wolf','fox'
+      ];
+
+      function runRandomWords() {
+        if (!rwCount || !rwOutput || !rwError) return;
+        rwError.classList.add('hidden');
+        rwOutput.value = '';
+        let count = parseInt(rwCount.value, 10);
+        if (Number.isNaN(count) || count < 1) count = 1;
+        if (count > 50) count = 50;
+        const unique = rwUnique && rwUnique.checked;
+        const words = [];
+        if (unique) {
+          if (count > RANDOM_WORDS.length) {
+            rwError.textContent = 'Requested more unique words than available.';
+            rwError.classList.remove('hidden');
+            return;
+          }
+          const pool = RANDOM_WORDS.slice();
+          for (let i = 0; i < count; i++) {
+            const idx = Math.floor(Math.random() * pool.length);
+            const [w] = pool.splice(idx, 1);
+            words.push(w);
+          }
+        } else {
+          for (let i = 0; i < count; i++) {
+            const idx = Math.floor(Math.random() * RANDOM_WORDS.length);
+            words.push(RANDOM_WORDS[idx]);
+          }
+        }
+        rwOutput.value = words.join(', ');
+      }
+
+      if (rwRun) rwRun.addEventListener('click', runRandomWords);
+      if (rwClear) rwClear.addEventListener('click', () => {
+        if (rwOutput) rwOutput.value = '';
+        if (rwError) rwError.classList.add('hidden');
+      });
+
+      // Username generator logic
+      const userCount = document.getElementById('userCount');
+      const userNumbers = document.getElementById('userNumbers');
+      const userSeparator = document.getElementById('userSeparator');
+      const userRun = document.getElementById('userRun');
+      const userClear = document.getElementById('userClear');
+      const userOutput = document.getElementById('userOutput');
+      const userError = document.getElementById('userError');
+
+      const USER_ADJ = [
+        'bright','silent','rapid','clever','lucky','fuzzy','brave','friendly','gentle','mighty',
+        'cosmic','digital','urban','wild','chill','frozen','golden','silver','neon','shadow'
+      ];
+      const USER_NOUN = [
+        'panda','tiger','falcon','dragon','wizard','rider','hacker','writer','gamer','runner',
+        'ninja','pirate','coder','artist','explorer','voyager','ranger','guardian','phoenix','wolf'
+      ];
+
+      function runUsernameGen() {
+        if (!userCount || !userOutput || !userError) return;
+        userError.classList.add('hidden');
+        userOutput.value = '';
+        let count = parseInt(userCount.value, 10);
+        if (Number.isNaN(count) || count < 1) count = 1;
+        if (count > 30) count = 30;
+        const addNumbers = userNumbers && userNumbers.checked;
+        const useSep = userSeparator && userSeparator.checked;
+        const sep = useSep ? '_' : '';
+        const results = [];
+        for (let i = 0; i < count; i++) {
+          const adj = USER_ADJ[Math.floor(Math.random() * USER_ADJ.length)];
+          const noun = USER_NOUN[Math.floor(Math.random() * USER_NOUN.length)];
+          let name = useSep ? `${adj}${sep}${noun}` : `${adj}${noun}`;
+          if (addNumbers) {
+            const num = Math.floor(Math.random() * 1000);
+            name += useSep ? `${sep}${num}` : num;
+          }
+          results.push(name);
+        }
+        userOutput.value = results.join('\n');
+      }
+
+      if (userRun) userRun.addEventListener('click', runUsernameGen);
+      if (userClear) userClear.addEventListener('click', () => {
+        if (userOutput) userOutput.value = '';
+        if (userError) userError.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
