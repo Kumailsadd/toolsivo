@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word & Character Counter – Live SEO Length Checker | Toolsivo</title>
+  <meta name="description" content="Count characters, words, lines and reading time instantly. Includes SEO title & meta description length guidance. Runs 100% in your browser." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://kumailsadd.github.io/toolsivo/tools/word-character-counter/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Word & Character Counter – Live SEO Length Checker | Toolsivo" />
+  <meta property="og:description" content="Measure content length, title tag characters and meta description limits in real-time. Private, fast and accurate for writers and SEOs." />
+  <meta property="og:url" content="https://kumailsadd.github.io/toolsivo/tools/word-character-counter/" />
+  <meta property="og:site_name" content="Toolsivo" />
+  <meta property="og:image" content="https://kumailsadd.github.io/toolsivo/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Word & Character Counter – Live SEO Length Checker | Toolsivo" />
+  <meta name="twitter:description" content="Track text stats, reading time and SERP-safe lengths without uploading content anywhere." />
+  <meta name="twitter:image" content="https://kumailsadd.github.io/toolsivo/og-image.png" />
+  <link rel="icon" href="../../favicon.ico" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #4f46e5;
+    }
+    @layer base {
+      body {
+        @apply bg-slate-950 text-slate-100 antialiased;
+      }
+    }
+    @layer components {
+      .btn-primary {
+        @apply inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 transition;
+      }
+      .badge {
+        @apply inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-[11px] font-medium text-emerald-200;
+      }
+      .ad-slot {
+        @apply border border-slate-800 bg-slate-900/60 rounded-xl p-3 text-center text-[11px] uppercase tracking-wide text-slate-500;
+      }
+      .card {
+        @apply rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg shadow-slate-950/40;
+      }
+      .stat-box {
+        @apply rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2 text-xs text-slate-300;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="../../index.html#tools" class="flex items-center gap-3">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/30">
+          <span class="text-lg font-bold">T</span>
+        </span>
+        <span class="text-sm font-semibold text-slate-100">Toolsivo</span>
+      </a>
+      <a href="../../index.html#tools" class="text-xs font-medium text-slate-300 hover:text-primary">← Browse all tools</a>
+    </div>
+  </header>
 
+  <main class="pb-16">
+    <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950/90">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div class="max-w-3xl">
+          <p class="badge">100% client-side – your data never leaves your browser</p>
+          <h1 class="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">Word &amp; Character Counter</h1>
+          <p class="mt-4 text-base text-slate-300">
+            Instantly measure characters, words, lines and estimated reading time. Perfect for SEO titles, meta descriptions, newsletters,
+            social captions and editorial workflows.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
+            <span>Live stats update as you type.</span>
+            <span>SEO title &amp; description helpers included.</span>
+            <span>No copy is uploaded or logged.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14 grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+        <div>
+          <!-- Ad placeholder -->
+          <!-- Ad placeholder: insert AdSense code here -->
+          <div class="ad-slot mb-5">Ad space</div>
+
+          <div class="card space-y-5">
+            <div>
+              <label for="mainText" class="text-sm font-semibold text-slate-200">Paste or type text</label>
+              <textarea id="mainText" class="mt-2 h-48 w-full rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2 text-sm text-slate-100 focus:border-primary/60 focus:ring-2 focus:ring-primary/40" placeholder="Write or paste your content here…"></textarea>
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="stat-box">
+                <p class="text-[11px] uppercase tracking-wide text-slate-500">Characters</p>
+                <p id="charCount" class="text-xl font-semibold text-slate-50">0</p>
+              </div>
+              <div class="stat-box">
+                <p class="text-[11px] uppercase tracking-wide text-slate-500">Words</p>
+                <p id="wordCount" class="text-xl font-semibold text-slate-50">0</p>
+              </div>
+              <div class="stat-box">
+                <p class="text-[11px] uppercase tracking-wide text-slate-500">Lines</p>
+                <p id="lineCount" class="text-xl font-semibold text-slate-50">0</p>
+              </div>
+              <div class="stat-box">
+                <p class="text-[11px] uppercase tracking-wide text-slate-500">Reading time</p>
+                <p id="readingTime" class="text-xl font-semibold text-slate-50">0 min</p>
+              </div>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+                <label for="seoTitle" class="text-xs font-semibold text-slate-300">SEO title</label>
+                <input id="seoTitle" type="text" class="mt-2 w-full rounded-lg border border-slate-800 bg-slate-950/70 px-3 py-2 text-sm text-slate-100 focus:border-primary/60 focus:ring-2 focus:ring-primary/40" placeholder="Keep it under 60 characters" />
+                <p id="seoTitleStatus" class="mt-2 text-xs font-medium">0 / 60 characters</p>
+              </div>
+              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+                <label for="seoDescription" class="text-xs font-semibold text-slate-300">Meta description</label>
+                <textarea id="seoDescription" class="mt-2 h-24 w-full rounded-lg border border-slate-800 bg-slate-950/70 px-3 py-2 text-sm text-slate-100 focus:border-primary/60 focus:ring-2 focus:ring-primary/40" placeholder="Aim for 140–160 characters"></textarea>
+                <p id="seoDescriptionStatus" class="mt-2 text-xs font-medium">0 / 155 characters</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 text-xs text-slate-300">
+              <p class="font-semibold text-slate-100">SERP preview</p>
+              <div class="mt-3 space-y-1">
+                <p id="previewTitle" class="text-[15px] text-sky-400">Title will appear here</p>
+                <p id="previewUrl" class="text-[13px] text-emerald-400">https://www.example.com/sample-url</p>
+                <p id="previewDescription" class="text-[13px] text-slate-200">Meta description preview text will appear here once you start typing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="space-y-5">
+          <div class="card">
+            <h2 class="text-base font-semibold text-slate-100">Why writers love this counter</h2>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li>One screen for body copy, title tags and meta descriptions.</li>
+              <li>Instant reading-time estimate for newsletters or blog posts.</li>
+              <li>Works great for LinkedIn updates, tweets and ad headlines.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 class="text-base font-semibold text-slate-100">Tips for accurate counts</h2>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-300">
+              <li>Paste plain text to avoid hidden formatting.</li>
+              <li>Use the SERP preview for quick readability checks.</li>
+              <li>Toggle light/dark mode in your OS for better contrast.</li>
+            </ul>
+          </div>
+          <div class="card space-y-3">
+            <h2 class="text-base font-semibold text-slate-100">Need help writing optimized copy?</h2>
+            <p class="text-sm text-slate-300">Read our in-depth tutorial on tracking word counts and character limits for different channels.</p>
+            <a href="how-to-check-word-and-character-counts.html" class="btn-primary justify-center">Read the guide</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-800 bg-slate-950/90">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+        <article class="space-y-6 text-sm leading-relaxed text-slate-300">
+          <h2 class="text-2xl font-semibold text-slate-50">About this word counter</h2>
+          <p>
+            Content professionals juggle strict character limits for ads, newsletters, email subject lines and SERP snippets. Copy also needs to hit a comfortable
+            reading time and maintain consistent structure. The Toolsivo Word &amp; Character Counter keeps everything in one place: paste your copy, monitor stats,
+            and preview how your title and description will look in Google.
+          </p>
+          <p>
+            Because the tool is client-side, you can safely paste drafts for regulated industries, confidential product launches or internal communication templates
+            without risking leaks. Keep the tab open throughout your day—there’s no login, no tracking, and no storage of your text.
+          </p>
+
+          <!-- Ad placeholder -->
+          <!-- Ad placeholder: insert AdSense code here -->
+          <div class="ad-slot my-6">Ad space</div>
+
+          <h3 class="text-xl font-semibold text-slate-100">Common use cases</h3>
+          <ul class="list-disc space-y-2 pl-5">
+            <li><strong>SEO writers:</strong> keep title tags under 60 characters and descriptions around 155.</li>
+            <li><strong>Email marketers:</strong> ensure subject lines stay within recommended 35–45 characters for mobile.</li>
+            <li><strong>Social media managers:</strong> plan threads or carousels by counting precise copy blocks.</li>
+            <li><strong>Editors:</strong> track reading time to maintain consistent article depth.</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-slate-100">How to interpret the metrics</h3>
+          <p>
+            Character counts include spaces, which aligns with most advertising and SEO guidelines. Words are calculated using whitespace separation, while line counts
+            help you diagnose unwanted paragraphs. Reading time assumes ~200 words per minute and rounds to the nearest tenth for clarity.
+          </p>
+
+          <h3 class="text-xl font-semibold text-slate-100">FAQ</h3>
+          <dl class="space-y-4">
+            <div>
+              <dt class="font-semibold text-slate-200">Does it support other languages?</dt>
+              <dd class="text-slate-400">Yes. Any language that uses whitespace-separated words will work. For languages without spaces, counts reflect characters.</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-200">Can I export the counts?</dt>
+              <dd class="text-slate-400">Copy/paste the stats manually or take a screenshot. This lightweight tool is intentionally simple and offline.</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-200">What about multi-paragraph formatting?</dt>
+              <dd class="text-slate-400">The line count helps you keep track of paragraphs. You can also copy the formatted text directly for CMS use.</dd>
+            </div>
+          </dl>
+
+          <p>
+            Need a refresher on best practices? Visit the
+            <a href="how-to-check-word-and-character-counts.html">complete guide to measuring word and character counts</a> or explore more privacy-first tools on the
+            <a href="../../index.html#tools">Toolsivo homepage</a>.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <p>© <span id="year"></span> Toolsivo. All rights reserved.</p>
+      <a href="../../index.html#tools" class="text-primary hover:text-indigo-300">Browse all tools →</a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mainText = document.getElementById('mainText');
+      const charCount = document.getElementById('charCount');
+      const wordCount = document.getElementById('wordCount');
+      const lineCount = document.getElementById('lineCount');
+      const readingTime = document.getElementById('readingTime');
+      const seoTitle = document.getElementById('seoTitle');
+      const seoDescription = document.getElementById('seoDescription');
+      const seoTitleStatus = document.getElementById('seoTitleStatus');
+      const seoDescriptionStatus = document.getElementById('seoDescriptionStatus');
+      const previewTitle = document.getElementById('previewTitle');
+      const previewDescription = document.getElementById('previewDescription');
+
+      function updateCounts() {
+        const text = mainText.value;
+        const chars = text.length;
+        const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+        const lines = text ? text.split(/\n/).length : 0;
+        const minutes = words / 200;
+        charCount.textContent = chars;
+        wordCount.textContent = words;
+        lineCount.textContent = lines;
+        readingTime.textContent = minutes < 0.5 ? 'Less than 1 min' : `${Math.round(minutes * 10) / 10} min`;
+      }
+
+      function updateSeoTitle() {
+        const value = seoTitle.value;
+        const len = value.length;
+        seoTitleStatus.textContent = `${len} / 60 characters`;
+        seoTitleStatus.classList.toggle('text-emerald-400', len >= 40 && len <= 60);
+        previewTitle.textContent = len ? value : 'Title will appear here';
+      }
+
+      function updateSeoDescription() {
+        const value = seoDescription.value;
+        const len = value.length;
+        seoDescriptionStatus.textContent = `${len} / 155 characters`;
+        seoDescriptionStatus.classList.toggle('text-emerald-400', len >= 120 && len <= 165);
+        previewDescription.textContent = len ? value : 'Meta description preview text will appear here once you start typing.';
+      }
+
+      mainText.addEventListener('input', updateCounts);
+      seoTitle.addEventListener('input', updateSeoTitle);
+      seoDescription.addEventListener('input', updateSeoDescription);
+
+      updateCounts();
+      updateSeoTitle();
+      updateSeoDescription();
+
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    });
+  </script>
+</body>
+</html>
