@@ -128,7 +128,7 @@
               <p class="font-semibold text-slate-100">SERP preview</p>
               <div class="mt-3 space-y-1">
                 <p id="previewTitle" class="text-[15px] text-sky-400">Title will appear here</p>
-                <p id="previewUrl" class="text-[13px] text-emerald-400">https://www.example.com/sample-url</p>
+                <p class="text-[13px] text-emerald-400">https://www.example.com/sample-url</p>
                 <p id="previewDescription" class="text-[13px] text-slate-200">Meta description preview text will appear here once you start typing.</p>
               </div>
             </div>
@@ -212,80 +212,4 @@
           <p>
             Need a refresher on best practices? Visit the
             <a href="how-to-check-word-and-character-counts.html">complete guide to measuring word and character counts</a> or explore more privacy-first tools on the
-            <a href="../../index.html#tools">Toolsivo homepage</a>.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-slate-800 bg-slate-950">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Toolsivo. All rights reserved.</p>
-      <a href="../../index.html#tools" class="text-primary hover:text-indigo-300">Browse all tools →</a>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const mainText = document.getElementById('mainText');
-      const charCount = document.getElementById('charCount');
-      const wordCount = document.getElementById('wordCount');
-      const lineCount = document.getElementById('lineCount');
-      const readingTime = document.getElementById('readingTime');
-      const seoTitle = document.getElementById('seoTitle');
-      const seoDescription = document.getElementById('seoDescription');
-      const seoTitleStatus = document.getElementById('seoTitleStatus');
-      const seoDescriptionStatus = document.getElementById('seoDescriptionStatus');
-      const previewTitle = document.getElementById('previewTitle');
-      const previewDescription = document.getElementById('previewDescription');
-
-      function updateCounts() {
-        const text = mainText.value;
-        const chars = text.length;
-        const words = text.trim() ? text.trim().split(/\s+/).length : 0;
-        const lines = text ? text.split(/\n/).length : 0;
-        const minutes = words / 200;
-        charCount.textContent = chars;
-        wordCount.textContent = words;
-        lineCount.textContent = lines;
-        readingTime.textContent = minutes < 0.5 ? 'Less than 1 min' : `${Math.round(minutes * 10) / 10} min`;
-      }
-
-      function updateSeoTitle() {
-        const value = seoTitle.value;
-        const len = value.length;
-        seoTitleStatus.textContent = `${len} / 60 characters`;
-        if (len >= 40 && len <= 60) {
-          seoTitleStatus.classList.add('text-emerald-400');
-        } else {
-          seoTitleStatus.classList.remove('text-emerald-400');
-        }
-        previewTitle.textContent = len ? value : 'Title will appear here';
-      }
-
-      function updateSeoDescription() {
-        const value = seoDescription.value;
-        const len = value.length;
-        seoDescriptionStatus.textContent = `${len} / 155 characters`;
-        if (len >= 120 && len <= 165) {
-          seoDescriptionStatus.classList.add('text-emerald-400');
-        } else {
-          seoDescriptionStatus.classList.remove('text-emerald-400');
-        }
-        previewDescription.textContent = len ? value : 'Meta description preview text will appear here once you start typing.';
-      }
-
-      mainText.addEventListener('input', updateCounts);
-      seoTitle.addEventListener('input', updateSeoTitle);
-      seoDescription.addEventListener('input', updateSeoDescription);
-
-      updateCounts();
-      updateSeoTitle();
-      updateSeoDescription();
-
-      document.getElementById('year').textContent = String(new Date().getFullYear());
-    });
-  </script>
-</body>
-</html>
+            <a href="../../index.html#
