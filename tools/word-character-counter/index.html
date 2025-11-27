@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Track text stats, reading time and SERP-safe lengths without uploading content anywhere." />
   <meta name="twitter:image" content="https://kumailsadd.github.io/toolsivo/og-image.png" />
   <link rel="icon" href="../../favicon.ico" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
       --color-primary: #4f46e5;
@@ -256,7 +256,11 @@
         const value = seoTitle.value;
         const len = value.length;
         seoTitleStatus.textContent = `${len} / 60 characters`;
-        seoTitleStatus.classList.toggle('text-emerald-400', len >= 40 && len <= 60);
+        if (len >= 40 && len <= 60) {
+          seoTitleStatus.classList.add('text-emerald-400');
+        } else {
+          seoTitleStatus.classList.remove('text-emerald-400');
+        }
         previewTitle.textContent = len ? value : 'Title will appear here';
       }
 
@@ -264,7 +268,11 @@
         const value = seoDescription.value;
         const len = value.length;
         seoDescriptionStatus.textContent = `${len} / 155 characters`;
-        seoDescriptionStatus.classList.toggle('text-emerald-400', len >= 120 && len <= 165);
+        if (len >= 120 && len <= 165) {
+          seoDescriptionStatus.classList.add('text-emerald-400');
+        } else {
+          seoDescriptionStatus.classList.remove('text-emerald-400');
+        }
         previewDescription.textContent = len ? value : 'Meta description preview text will appear here once you start typing.';
       }
 
